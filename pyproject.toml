@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "numbeopy"
+version = "0.1.0"
+description = "Python client for Numbeo's public cost-of-living pages — country-aggregate prices and quality-of-life indices via a small, rate-limited HTML client."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "CC-BY-NC-4.0" }
+authors = [{ name = "Oğuz Gençer", email = "oguzgencer@gmail.com" }]
+keywords = ["numbeo", "cost-of-living", "prices", "quality-of-life", "purchasing-power"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: Free for non-commercial use",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = [
+    "requests>=2.31",
+    "pandas>=2.0",
+    "lxml>=4.9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+]
+
+[project.scripts]
+numbeopy = "numbeopy.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/drader/numbeopy"
+Repository = "https://github.com/drader/numbeopy"
+Issues = "https://github.com/drader/numbeopy/issues"
+Changelog = "https://github.com/drader/numbeopy/blob/main/CHANGELOG.md"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
