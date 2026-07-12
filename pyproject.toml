@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "numbeopy"
-version = "0.1.0"
+version = "0.2.0"
 description = "Python client for Numbeo's public cost-of-living pages — country-aggregate prices and quality-of-life indices via a small, rate-limited HTML client."
 readme = "README.md"
 requires-python = ">=3.10"

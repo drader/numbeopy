@@ -1,0 +1,4825 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="description" content="Property Investment Index. See comparison of indicators for residential property investment like apartment price to income ratio, price to rent ratio, gross rental yield, loan affrodability index, ...  " />
+            <script defer src="https://www.numbeo.com/common/numbeo_standard.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/themes/redmond/jquery-ui.min.css" rel="Stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.numbeo.com/favicon.ico" />
+    <script  defer  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script  defer  src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+   <script src='https://www.gstatic.com/charts/loader.js'></script>
+<link rel="apple-touch-icon" href="https://www.numbeo.com/images/apple-touch-icon.png">
+  <script>
+  if (typeof whenDocReady === "function") {
+    // already declared, do nothing
+  } else {
+    function whenDocReady(fn) {
+      // see if DOM is already available
+      if (document.readyState === "complete" || document.readyState === "interactive") {
+        // call on next available tick
+        setTimeout(fn, 1);
+      } else {
+        document.addEventListener("DOMContentLoaded", fn);
+      }
+    }
+  }
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HXEZG0C6Q2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+gtag('config', 'G-HXEZG0C6Q2');
+gtag('set', 'user_properties', { ab: '0'});
+</script>
+<link rel="stylesheet" href="https://cdn.datatables.net/v/ju/dt-1.10.22/datatables.min.css"/>
+<script defer src="https://cdn.datatables.net/v/ju/dt-1.10.22/datatables.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8993465169534557"
+     crossorigin="anonymous"></script>
+
+
+
+    <link rel="stylesheet" href="https://www.numbeo.com/common/style_desktop.css" />
+
+<link rel="alternate" hreflang="en" href="https://www.numbeo.com/property-investment/rankings.jsp" />
+<link rel="alternate" hreflang="de" href="https://de.numbeo.com/immobilienpreise/rankings" />
+<link rel="alternate" hreflang="pt" href="https://pt.numbeo.com/pre%C3%A7os-de-im%C3%B3veis/classifica%C3%A7%C3%B5es" />
+<link rel="alternate" hreflang="it" href="https://it.numbeo.com/prezzi-delle-propriet%C3%A0-immobiliari/graduatoria" />
+<link rel="alternate" hreflang="fr" href="https://fr.numbeo.com/prix-de-l%27immobilier/classements" />
+<link rel="alternate" hreflang="es" href="https://es.numbeo.com/precios-de-inmuebles/clasificaciones" />
+
+<title>Property Prices Index 2026 Mid-Year</title>
+</head>
+
+<body>
+
+<nav>
+<div class="logo-and-upper-ad">
+<div class="innerWidth" id="content_and_logo">
+<table style="width: 100%;" >
+<tr>
+<td style="padding-top: 14px; padding-bottom: 16px; vertical-align: bottom; max-width: fit-content" class="container_around_logo_desktop">
+<a href="https://www.numbeo.com/cost-of-living/" style="border: 0; text-decoration:none;">
+<img src="https://www.numbeo.com/images/numbeo_1B3B6F.svg" style="height: 60px; padding: 0px 0px; vertical-align: bottom; border: 0;" alt="" /></a>
+</td>
+<td style="padding-left:40px; padding-top: 5px; padding-bottom: 0px; vertical-align: middle; min-width: 440px; text-align: left;" >
+<div style="display: inline-block; width: 100%; margin-top: 10px; margin-bottom: 10px; text-align: left; vertical-align: bottom">
+<nav style="display: inline-block; vertical-align: middle;">
+<div class="standard_margin_inlineblock" >      <form action="https://www.numbeo.com/common/dispatcher.jsp" method="get" id="menu_dispatch_form"  style="display: inline; padding: 0; margin:0;">
+      <input type="hidden" name="where" value="https://www.numbeo.com/property-investment/in/" style="display: inline; padding:0; margin:0;" />
+<input id="city_selector_menu_city_id"  size="27"  type="text" placeholder="Select City" class="city-selector-menu" name="city_selector_menu_city_id" />
+<input type="hidden" id="menu_city_id" name="city_id"/>
+<input type="hidden" id="name_menu_city_id" name="name_city_id"/>
+      </form>
+</div>
+ <script>
+whenDocReady(function() {
+  	jQuery('#city_selector_menu_city_id').autocomplete({
+  	  source: 'https://www.numbeo.com/common/CitySearchJson',
+     minLength: 1,
+     delay: 3,
+     autoFocus: true,
+     select: function(event, ui) {
+         event.preventDefault();
+         $('#name_menu_city_id').val(ui.item.label);
+         $('#city_selector_menu_city_id').val(ui.item.label);
+         $('#menu_city_id').val(ui.item.value);
+jQuery('#menu_dispatch_form').submit();     },
+     focus: function(event, ui) {
+         event.preventDefault();
+     }
+	  })   .keydown(function(e){
+	    if (e.keyCode === 13){
+      if ($('#menu_city_id').val() == '') { 
+        e.preventDefault();
+      }
+      var val = $('#city_selector_menu_city_id').val();
+		   $('#name_menu_city_id').val(val);
+	   }
+  }); // end autocompleter definition
+$('#city_selector_menu_city_id').toggleClass('city-selector-menu');
+$('#city_selector_menu_city_id').toggleClass('city-selector-menu');
+ }); // end document ready 
+</script>
+</nav>
+</div>
+</td>
+<td style="vertical-align: middle; width: 468px; text-align: right;" >
+</td>
+</tr>
+</table>
+</div> <!-- innerWidth in header -->
+</div> <!-- logo-and-upper-ad -->
+</nav>
+<div class="innerWidth">
+<div class="dropdown-outer">
+<nav class="before-nav" >
+    <ul id="nav-one" class="nav">
+
+	<li class="dir">
+<a href="https://www.numbeo.com/cost-of-living/">Cost of Living</a>
+  <ul>
+    <li><a href="https://www.numbeo.com/cost-of-living/">Cost of Living</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/comparison.jsp">Cost of Living Comparison</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/calculator.jsp">Cost of Living Calculator</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/rankings_current.jsp">Cost of Living Index (Current)</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/rankings.jsp">Cost of Living Index</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/rankings_by_country.jsp">Cost of Living Index by Country</a></li>
+    <li><a href="https://www.numbeo.com/food-prices/">Food Prices</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/prices_by_city.jsp">Prices by City</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/prices_by_country.jsp">Prices by Country</a></li>
+    <li><a href="https://www.numbeo.com/taxi-fare/">Taxi Fare Calculator</a></li>
+    <li><a href="https://www.numbeo.com/gas-prices/">Gas Prices Calculator</a></li>
+    <li><a href="https://www.numbeo.com/common/motivation_and_methodology.jsp">Methodology and Motivation</a></li>
+    <li><a href="https://www.numbeo.com/salary-calculator/">Salary Calculator</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/contribute.jsp">Update Data for Your City</a></li>
+  </ul></li>
+
+	<li class="dir">
+<a href="https://www.numbeo.com/property-investment/">Property Prices</a>
+  <ul>
+    <li><a href="https://www.numbeo.com/property-investment/">Property Prices</a></li>
+    <li><a href="https://www.numbeo.com/property-investment/comparison.jsp">Property Prices Comparison</a></li>
+    <li><a href="https://www.numbeo.com/property-investment/rankings_current.jsp">Property Price Index (Current)</a></li>
+    <li><a href="https://www.numbeo.com/property-investment/rankings.jsp">Property Price Index</a></li>
+    <li><a href="https://www.numbeo.com/property-investment/rankings_by_country.jsp">Property Price Index by Country</a></li>
+   </ul></li>
+
+	<li class="dir">
+<a href="https://www.numbeo.com/quality-of-life/">Quality of Life</a>
+  <ul>
+    <li><a href="https://www.numbeo.com/quality-of-life/">Quality of Life</a></li>
+    <li><a href="https://www.numbeo.com/quality-of-life/comparison.jsp">Quality of Life Comparisons</a></li>
+    <li><a href="https://www.numbeo.com/quality-of-life/rankings.jsp">Quality of Life Index</a></li>
+    <li><a href="https://www.numbeo.com/quality-of-life/rankings_by_country.jsp">Quality of Life Index by Country</a></li>
+    <li><a href="https://www.numbeo.com/quality-of-life/current_city_indices">Current City Indices (Rolling)</a></li>
+    <li><a href="https://www.numbeo.com/crime/">Crime</a></li>
+    <li><a href="https://www.numbeo.com/crime/rankings.jsp">Crime Index</a></li>
+    <li><a href="https://www.numbeo.com/crime/rankings_by_country.jsp">Crime Index by Country</a></li>
+    <li><a href="https://www.numbeo.com/health-care/">Health Care</a></li>
+    <li><a href="https://www.numbeo.com/health-care/rankings.jsp">Health Care Index</a></li>
+    <li><a href="https://www.numbeo.com/health-care/rankings_by_country.jsp">Health Care Index by Country</a></li>
+    <li><a href="https://www.numbeo.com/pollution/">Pollution</a></li>
+    <li><a href="https://www.numbeo.com/pollution/rankings.jsp">Pollution Index</a></li>
+    <li><a href="https://www.numbeo.com/pollution/rankings_by_country.jsp">Pollution Index by Country</a></li>
+     <li><a href="https://www.numbeo.com/traffic/">Traffic</a></li>
+     <li><a href="https://www.numbeo.com/traffic/rankings.jsp">Traffic Index</a></li>
+     <li><a href="https://www.numbeo.com/traffic/rankings_by_country.jsp">Traffic Index by Country</a></li>
+	</ul></li>
+	<li class="dir">
+<a href="https://www.numbeo.com/premium/index">Data &amp; API</a>
+  <ul>
+    <li><a href="https://www.numbeo.com/common/api.jsp">Data API</a></li>
+    <li><a href="https://www.numbeo.com/premium/commercial-license">Data License</a></li>
+    <li><a href="https://www.numbeo.com/premium/download-data">Bulk Data Download</a></li>
+    <li><a href="https://www.numbeo.com/cost-of-living/historical-data-analysis">Historical Data Explorer</a></li>
+    <li><a href="https://www.numbeo.com/premium/">Data Quality Reports</a></li>
+	</ul></li>
+	<li class="dir">
+<a href="https://www.numbeo.com/premium/index#compensation">Compensation</a>
+  <ul>
+    <li><a href="https://www.numbeo.com/cost-of-living/estimator_main">Cost of Living Estimator</a></li>
+    <li><a href="https://www.numbeo.com/premium/market-basket-comparison">Market Basket Comparison by City</a></li>
+    <li><a href="https://www.numbeo.com/premium/market-basket-comparison-by-country">Market Basket Comparison by Country</a></li>
+    <li><a href="https://www.numbeo.com/premium/international-salary-equivalent-calculator">Global Salary Equivalent Calculator</a></li>
+    <li><a href="https://www.numbeo.com/premium/relocation-salary-calculator">Relocation Salary Calculator</a></li>
+    <li><a href="https://www.numbeo.com/premium/net-to-gross-salary-converter">Net-To-Gross Salary Converter</a></li>
+    <li><a href="https://www.numbeo.com/premium/per-diem-allowance-calculator">Per Diem Allowance Calculator</a></li>
+	</ul></li>
+
+
+</ul>
+<br style="clear: both"/>
+</nav>
+</div> <!-- dropdown-outer -->
+</div> <!-- innerWidth -->
+<div class="innerWidth">
+ <div class="right-ads-and-info">
+ <div class="right-ads">
+<!-- ═══════════════════════════════════════════════
+       BANNER STARTS HERE — embed this on Numbeo pages
+       ═══════════════════════════════════════════════ -->
+  <a href="https://www.numbeo.com/api/cost-of-living-api"
+     target="_blank"
+     rel="noopener"
+     style="display:block;width:300px;height:250px;text-decoration:none;box-sizing:border-box;overflow:hidden;position:relative;background:#0f1e3d;border-radius:4px;">
+ 
+ 
+    <!-- Background grid lines -->
+    <svg style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.07;" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+          <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#4a9eff" stroke-width="0.5"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#grid)"/>
+    </svg>
+ 
+    <!-- Accent glow top-right -->
+    <div style="position:absolute;top:-40px;right:-40px;width:150px;height:150px;background:radial-gradient(circle,rgba(26,115,232,0.35) 0%,transparent 70%);pointer-events:none;"></div>
+    <!-- Accent glow bottom-left -->
+    <div style="position:absolute;bottom:-30px;left:-20px;width:120px;height:120px;background:radial-gradient(circle,rgba(0,180,120,0.2) 0%,transparent 70%);pointer-events:none;"></div>
+ 
+    <!-- Content -->
+    <div style="position:relative;z-index:1;padding:22px 20px 18px;display:flex;flex-direction:column;height:100%;box-sizing:border-box;">
+ 
+      <!-- Logo row -->
+      <div style="display:flex;align-items:center;gap:7px;margin-bottom:14px;">
+        <svg width="22" height="22" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="8" fill="#1a73e8"/>
+          <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-size="22" font-weight="bold" fill="white" font-family="Arial">N</text>
+        </svg>
+        <span style="font-size:13px;font-weight:700;color:#ffffff;letter-spacing:0.04em;">NUMBEO</span>
+        <span style="font-size:10px;font-weight:500;color:#5b9cf6;letter-spacing:0.08em;text-transform:uppercase;margin-left:2px;">API</span>
+      </div>
+ 
+      <!-- Headline -->
+      <div style="font-family:'DM Serif Display',Georgia,serif;font-size:19px;line-height:1.2;color:#ffffff;margin-bottom:10px;letter-spacing:-0.01em;">
+        The World's<br>Cost of Living API
+      </div>
+ 
+      <!-- Body -->
+      <div style="font-size:11.5px;line-height:1.5;color:#a8c4e8;margin-bottom:14px;flex:1;">
+        Trusted by 100+ companies across 10+ countries&nbsp;— from fintech and consulting firms to global HR teams.
+        <!--100+ companies trust it, from fintech and consulting firms to global HR teams. -->
+      </div>
+ 
+      <!-- Stats strip -->
+      <div style="display:flex;gap:0;margin-bottom:16px;border:1px solid rgba(74,158,255,0.2);border-radius:4px;overflow:hidden;">
+      </div>
+ 
+      <!-- CTA -->
+      <div style="background:#1a73e8;border-radius:4px;padding:9px 12px;text-align:center;font-family:'DM Sans',Arial,sans-serif;font-size:12px;font-weight:700;color:#ffffff;letter-spacing:0.03em;">
+        Explore the API &nbsp;→
+      </div>
+ 
+    </div>
+  </a>
+  <!-- ═══════════════════════════════════════════════
+       BANNER ENDS HERE
+       ═══════════════════════════════════════════════ -->
+
+ </div>
+ </div>
+<nav class="breadcrumb"><nav itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+<a href="https://www.numbeo.com/common/" class="discreet_link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="image_without_border hide_smaller_than_600" style="vertical-align: text-bottom" viewBox="0 0 24 24"><path fill="#1B3B6F" d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8z"/></svg></a><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+<a href="https://www.numbeo.com/property-investment/" itemprop="item" class="breadcrumb_link"><span itemprop="name">Property Prices</span></a><meta itemprop="position" content="1" />
+</span> <span style="font-size: 75%; display: inline-block;">&gt;</span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+ <a href="https://www.numbeo.com/property-investment/rankings.jsp"  itemprop="item"  class="breadcrumb_link"><span itemprop="name">Index by City</span></a><meta itemprop="position" content="2" />
+</span></nav>
+</nav>
+    <h1> Property Prices Index by City 2026 Mid-Year</h1>
+
+
+
+
+<div id="page_container">
+<p>You are viewing the Property Prices Index 2026 Mid-Year.
+These indexes are historical and are published periodically, providing a snapshot of the data at a specific point in time.<p>For the latest rankings (updated continuously), please visit  <a href="rankings_current.jsp">Property Prices Index (Current)</a>.
+<div class="standard_margin">
+<a href="gmaps_rankings.jsp"><img src="https://www.numbeo.com/images/map-view-property-investment.png" width="330" alt="Property Prices Map" title="Property Prices Index Map" class="image_map"/></a>
+</div>
+<div style="display: flex; width: 100%;">
+<div style="align-self: flex-end; "> <form method="get" class="changePageForm" action="https://www.numbeo.com/property-investment/rankings.jsp">
+ Select date: <select name="title" class="date_actually_title_selector" onchange="this.form.submit();">
+  <option value="2026-mid" selected="selected">2026 Mid-Year</option>
+  <option value="2026">2026</option>
+  <option value="2025-mid">2025 Mid-Year</option>
+  <option value="2025">2025</option>
+  <option value="2024-mid">2024 Mid-Year</option>
+  <option value="2024">2024</option>
+  <option value="2023-mid">2023 Mid-Year</option>
+  <option value="2023">2023</option>
+  <option value="2022-mid">2022 Mid-Year</option>
+  <option value="2022">2022</option>
+  <option value="2021-mid">2021 Mid-Year</option>
+  <option value="2021">2021</option>
+  <option value="2020-mid">2020 Mid-Year</option>
+  <option value="2020">2020</option>
+  <option value="2019-mid">2019 Mid-Year</option>
+  <option value="2019">2019</option>
+  <option value="2018-mid">2018 Mid-Year</option>
+  <option value="2018">2018</option>
+  <option value="2017-mid">2017 Mid-Year</option>
+  <option value="2017">2017</option>
+  <option value="2016-mid">2016 Mid-Year</option>
+  <option value="2016">2016</option>
+  <option value="2015-mid">2015 Mid-Year</option>
+  <option value="2015">2015</option>
+  <option value="2014-mid">2014 Mid-Year</option>
+  <option value="2014">2014</option>
+  <option value="2013">2013</option>
+  <option value="2012">2012</option>
+  <option value="2011">2011</option>
+  <option value="2010">2010</option>
+  <option value="2009">2009</option>
+</select>
+ </form>
+<div class="select_region_links">
+<span class="ui-state-default select_region"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" style="vertical-align: text-bottom"><path fill="#002BB8" d="M17.9 17.39c-.26-.8-1.01-1.39-1.9-1.39h-1v-3a1 1 0 0 0-1-1H8v-2h2a1 1 0 0 0 1-1V7h2a2 2 0 0 0 2-2v-.41a7.984 7.984 0 0 1 2.9 12.8M11 19.93c-3.95-.49-7-3.85-7-7.93c0-.62.08-1.22.21-1.79L9 15v1a2 2 0 0 0 2 2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg> <label>Select Region:</label></span><span class="nobreak">
+<a href="https://www.numbeo.com/property-investment/region_rankings.jsp?title=2026-mid&amp;region=002" class="ui-state-default region_link">Africa</a>
+</span>
+<span class="nobreak">
+<a href="https://www.numbeo.com/property-investment/region_rankings.jsp?title=2026-mid&amp;region=019" class="ui-state-default region_link">America</a>
+</span>
+<span class="nobreak">
+<a href="https://www.numbeo.com/property-investment/region_rankings.jsp?title=2026-mid&amp;region=142" class="ui-state-default region_link">Asia</a>
+</span>
+<span class="nobreak">
+<a href="https://www.numbeo.com/property-investment/region_rankings.jsp?title=2026-mid&amp;region=150" class="ui-state-default region_link">Europe</a>
+</span>
+<span class="nobreak">
+<a href="https://www.numbeo.com/property-investment/region_rankings.jsp?title=2026-mid&amp;region=009" class="ui-state-default region_link">Oceania</a>
+</span>
+</div>
+<form method="get" class="changePageForm" action="https://www.numbeo.com/property-investment/rankings.jsp">
+Select display column: <input type="hidden" name="title" value="2026-mid" />
+<select name="displayColumn"  onchange="this.form.submit();" class="displayColumn">
+  <option value="-1" selected="selected" >---All columns---</option>
+  <option value="0">Price To Income Ratio</option>
+  <option value="1">Gross Rental Yield City Centre</option>
+  <option value="2">Gross Rental Yield Outside of Centre</option>
+  <option value="3">Price To Rent Ratio City Centre</option>
+  <option value="4">Price To Rent Ratio Outside Of City Centre</option>
+  <option value="5">Mortgage As A Percentage Of Income</option>
+  <option value="6">Affordability Index</option>
+</select>
+ </form>
+</div>
+<div style="text-align: right; flex-grow: 1; height: 100%; vertical-align: bottom; align-self: flex-end">
+<div class="new_div_indices_info">
+<a href="https://www.numbeo.com/premium/download-data" title="Download Table" class="ui-state-default region_link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="vertical-align: text-bottom"><path fill="currentColor" d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7l7-7Z"/></svg> Download table</a></div>
+<div class="new_div_indices_info">
+<a href="https://www.numbeo.com/property-investment/indicators_explained.jsp" title="About these indices" class="ui-state-default region_link">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="vertical-align: text-bottom;" viewBox="0 0 24 24"><path fill="currentColor" d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2v6Z"/></svg> Learn more about these indices</a></div>
+</div>
+</div>
+
+      <table id="t2"  class="stripe row-border order-column compact" >
+<thead>
+	<tr>
+	<th><div style="font-size: 80%; vertical-align: middle;">Rank</div></th>
+		<th><div style="font-size: 95%;">City</div></th>
+		<th><div style="font-size: 90%;">Price To Income Ratio</div></th>
+		<th><div style="font-size: 90%;">Gross Rental Yield City Centre</div></th>
+		<th><div style="font-size: 90%;">Gross Rental Yield Outside of Centre</div></th>
+		<th><div style="font-size: 90%;">Price To Rent Ratio City Centre</div></th>
+		<th><div style="font-size: 90%;">Price To Rent Ratio Outside Of City Centre</div></th>
+		<th><div style="font-size: 90%;">Mortgage As A Percentage Of Income</div></th>
+		<th><div style="font-size: 90%;">Affordability Index</div></th>
+	</tr>
+</thead>
+<tbody>
+
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Lagos, Nigeria</td>
+    <td style="text-align: right">102.7</td>
+    <td style="text-align: right">7.4</td>
+    <td style="text-align: right">7.9</td>
+    <td style="text-align: right">13.6</td>
+    <td style="text-align: right">12.6</td>
+    <td style="text-align: right">1906.8</td>
+    <td style="text-align: right">0.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Colombo, Sri Lanka</td>
+    <td style="text-align: right">47.7</td>
+    <td style="text-align: right">3.8</td>
+    <td style="text-align: right">4.3</td>
+    <td style="text-align: right">26.7</td>
+    <td style="text-align: right">23.0</td>
+    <td style="text-align: right">657.4</td>
+    <td style="text-align: right">0.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bangkok, Thailand</td>
+    <td style="text-align: right">37.8</td>
+    <td style="text-align: right">3.3</td>
+    <td style="text-align: right">2.4</td>
+    <td style="text-align: right">30.7</td>
+    <td style="text-align: right">41.3</td>
+    <td style="text-align: right">308.8</td>
+    <td style="text-align: right">0.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Hanoi, Vietnam</td>
+    <td style="text-align: right">37.7</td>
+    <td style="text-align: right">2.0</td>
+    <td style="text-align: right">2.3</td>
+    <td style="text-align: right">50.7</td>
+    <td style="text-align: right">42.8</td>
+    <td style="text-align: right">385.9</td>
+    <td style="text-align: right">0.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Hong Kong, Hong Kong (China)</td>
+    <td style="text-align: right">35.2</td>
+    <td style="text-align: right">2.0</td>
+    <td style="text-align: right">2.2</td>
+    <td style="text-align: right">50.3</td>
+    <td style="text-align: right">44.5</td>
+    <td style="text-align: right">248.9</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Manila, Philippines</td>
+    <td style="text-align: right">34.8</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">2.9</td>
+    <td style="text-align: right">25.1</td>
+    <td style="text-align: right">35.0</td>
+    <td style="text-align: right">334.4</td>
+    <td style="text-align: right">0.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Phnom Penh, Cambodia</td>
+    <td style="text-align: right">34.1</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">5.7</td>
+    <td style="text-align: right">20.2</td>
+    <td style="text-align: right">17.7</td>
+    <td style="text-align: right">343.9</td>
+    <td style="text-align: right">0.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kathmandu, Nepal</td>
+    <td style="text-align: right">32.8</td>
+    <td style="text-align: right">2.0</td>
+    <td style="text-align: right">1.6</td>
+    <td style="text-align: right">49.6</td>
+    <td style="text-align: right">61.7</td>
+    <td style="text-align: right">385.4</td>
+    <td style="text-align: right">0.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Ho Chi Minh City, Vietnam</td>
+    <td style="text-align: right">32.4</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">3.6</td>
+    <td style="text-align: right">35.2</td>
+    <td style="text-align: right">27.8</td>
+    <td style="text-align: right">340.5</td>
+    <td style="text-align: right">0.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Taipei, Taiwan</td>
+    <td style="text-align: right">31.4</td>
+    <td style="text-align: right">1.4</td>
+    <td style="text-align: right">1.3</td>
+    <td style="text-align: right">74.0</td>
+    <td style="text-align: right">75.0</td>
+    <td style="text-align: right">196.8</td>
+    <td style="text-align: right">0.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Shanghai, China</td>
+    <td style="text-align: right">31.2</td>
+    <td style="text-align: right">1.7</td>
+    <td style="text-align: right">2.0</td>
+    <td style="text-align: right">58.3</td>
+    <td style="text-align: right">49.7</td>
+    <td style="text-align: right">211.5</td>
+    <td style="text-align: right">0.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">San Salvador, El Salvador</td>
+    <td style="text-align: right">30.3</td>
+    <td style="text-align: right">7.4</td>
+    <td style="text-align: right">9.1</td>
+    <td style="text-align: right">13.4</td>
+    <td style="text-align: right">11.0</td>
+    <td style="text-align: right">315.6</td>
+    <td style="text-align: right">0.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Mumbai, India</td>
+    <td style="text-align: right">30.1</td>
+    <td style="text-align: right">2.9</td>
+    <td style="text-align: right">3.4</td>
+    <td style="text-align: right">34.0</td>
+    <td style="text-align: right">29.7</td>
+    <td style="text-align: right">313.1</td>
+    <td style="text-align: right">0.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Seoul, South Korea</td>
+    <td style="text-align: right">30.0</td>
+    <td style="text-align: right">0.8</td>
+    <td style="text-align: right">1.2</td>
+    <td style="text-align: right">120.1</td>
+    <td style="text-align: right">82.5</td>
+    <td style="text-align: right">218.0</td>
+    <td style="text-align: right">0.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Beijing, China</td>
+    <td style="text-align: right">29.7</td>
+    <td style="text-align: right">2.0</td>
+    <td style="text-align: right">2.1</td>
+    <td style="text-align: right">49.9</td>
+    <td style="text-align: right">47.2</td>
+    <td style="text-align: right">200.6</td>
+    <td style="text-align: right">0.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Algiers, Algeria</td>
+    <td style="text-align: right">29.3</td>
+    <td style="text-align: right">1.7</td>
+    <td style="text-align: right">2.2</td>
+    <td style="text-align: right">58.9</td>
+    <td style="text-align: right">46.3</td>
+    <td style="text-align: right">238.1</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Xiamen, China</td>
+    <td style="text-align: right">29.0</td>
+    <td style="text-align: right">1.0</td>
+    <td style="text-align: right">1.3</td>
+    <td style="text-align: right">98.1</td>
+    <td style="text-align: right">76.8</td>
+    <td style="text-align: right">201.2</td>
+    <td style="text-align: right">0.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Shenzhen, China</td>
+    <td style="text-align: right">28.6</td>
+    <td style="text-align: right">1.4</td>
+    <td style="text-align: right">1.7</td>
+    <td style="text-align: right">71.0</td>
+    <td style="text-align: right">57.5</td>
+    <td style="text-align: right">198.3</td>
+    <td style="text-align: right">0.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Jakarta, Indonesia</td>
+    <td style="text-align: right">24.9</td>
+    <td style="text-align: right">3.5</td>
+    <td style="text-align: right">3.8</td>
+    <td style="text-align: right">28.7</td>
+    <td style="text-align: right">26.5</td>
+    <td style="text-align: right">278.1</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Singapore, Singapore</td>
+    <td style="text-align: right">24.7</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">35.7</td>
+    <td style="text-align: right">36.3</td>
+    <td style="text-align: right">156.2</td>
+    <td style="text-align: right">0.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Tehran, Iran</td>
+    <td style="text-align: right">24.3</td>
+    <td style="text-align: right">8.2</td>
+    <td style="text-align: right">8.6</td>
+    <td style="text-align: right">12.3</td>
+    <td style="text-align: right">11.7</td>
+    <td style="text-align: right">585.5</td>
+    <td style="text-align: right">0.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Baghdad, Iraq</td>
+    <td style="text-align: right">24.1</td>
+    <td style="text-align: right">2.4</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">41.2</td>
+    <td style="text-align: right">21.5</td>
+    <td style="text-align: right">176.9</td>
+    <td style="text-align: right">0.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Rawalpindi, Pakistan</td>
+    <td style="text-align: right">24.1</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">4.3</td>
+    <td style="text-align: right">24.8</td>
+    <td style="text-align: right">23.2</td>
+    <td style="text-align: right">548.6</td>
+    <td style="text-align: right">0.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Guangzhou, China</td>
+    <td style="text-align: right">23.3</td>
+    <td style="text-align: right">1.6</td>
+    <td style="text-align: right">1.8</td>
+    <td style="text-align: right">64.2</td>
+    <td style="text-align: right">54.3</td>
+    <td style="text-align: right">161.2</td>
+    <td style="text-align: right">0.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Rio de Janeiro, Brazil</td>
+    <td style="text-align: right">22.1</td>
+    <td style="text-align: right">4.6</td>
+    <td style="text-align: right">6.0</td>
+    <td style="text-align: right">21.8</td>
+    <td style="text-align: right">16.8</td>
+    <td style="text-align: right">291.4</td>
+    <td style="text-align: right">0.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Pattaya, Thailand</td>
+    <td style="text-align: right">21.5</td>
+    <td style="text-align: right">5.5</td>
+    <td style="text-align: right">5.8</td>
+    <td style="text-align: right">18.2</td>
+    <td style="text-align: right">17.3</td>
+    <td style="text-align: right">184.7</td>
+    <td style="text-align: right">0.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Beirut, Lebanon</td>
+    <td style="text-align: right">21.2</td>
+    <td style="text-align: right">5.7</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">17.6</td>
+    <td style="text-align: right">17.8</td>
+    <td style="text-align: right">262.5</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Moscow, Russia</td>
+    <td style="text-align: right">21.1</td>
+    <td style="text-align: right">3.3</td>
+    <td style="text-align: right">3.9</td>
+    <td style="text-align: right">30.1</td>
+    <td style="text-align: right">25.7</td>
+    <td style="text-align: right">435.0</td>
+    <td style="text-align: right">0.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Dhaka, Bangladesh</td>
+    <td style="text-align: right">20.1</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">2.9</td>
+    <td style="text-align: right">36.4</td>
+    <td style="text-align: right">35.1</td>
+    <td style="text-align: right">243.0</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Tel Aviv-Yafo, Israel</td>
+    <td style="text-align: right">20.0</td>
+    <td style="text-align: right">2.3</td>
+    <td style="text-align: right">2.6</td>
+    <td style="text-align: right">44.2</td>
+    <td style="text-align: right">38.8</td>
+    <td style="text-align: right">160.5</td>
+    <td style="text-align: right">0.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Fortaleza, Brazil</td>
+    <td style="text-align: right">19.9</td>
+    <td style="text-align: right">3.1</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">32.3</td>
+    <td style="text-align: right">24.7</td>
+    <td style="text-align: right">252.4</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Lahore, Pakistan</td>
+    <td style="text-align: right">19.7</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">3.3</td>
+    <td style="text-align: right">25.0</td>
+    <td style="text-align: right">30.6</td>
+    <td style="text-align: right">310.7</td>
+    <td style="text-align: right">0.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Medellin, Colombia</td>
+    <td style="text-align: right">19.4</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">10.0</td>
+    <td style="text-align: right">16.5</td>
+    <td style="text-align: right">10.0</td>
+    <td style="text-align: right">230.0</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Hangzhou, China</td>
+    <td style="text-align: right">19.3</td>
+    <td style="text-align: right">1.8</td>
+    <td style="text-align: right">2.1</td>
+    <td style="text-align: right">56.6</td>
+    <td style="text-align: right">48.1</td>
+    <td style="text-align: right">134.2</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Karachi, Pakistan</td>
+    <td style="text-align: right">19.1</td>
+    <td style="text-align: right">3.4</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">29.6</td>
+    <td style="text-align: right">23.8</td>
+    <td style="text-align: right">284.1</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Split, Croatia</td>
+    <td style="text-align: right">18.7</td>
+    <td style="text-align: right">3.3</td>
+    <td style="text-align: right">3.2</td>
+    <td style="text-align: right">30.8</td>
+    <td style="text-align: right">31.6</td>
+    <td style="text-align: right">130.3</td>
+    <td style="text-align: right">0.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Lisbon, Portugal</td>
+    <td style="text-align: right">18.7</td>
+    <td style="text-align: right">4.5</td>
+    <td style="text-align: right">5.7</td>
+    <td style="text-align: right">22.3</td>
+    <td style="text-align: right">17.4</td>
+    <td style="text-align: right">132.2</td>
+    <td style="text-align: right">0.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Jerusalem, Israel</td>
+    <td style="text-align: right">18.4</td>
+    <td style="text-align: right">2.1</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">46.9</td>
+    <td style="text-align: right">35.6</td>
+    <td style="text-align: right">145.9</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Nizhny Novgorod, Russia</td>
+    <td style="text-align: right">18.4</td>
+    <td style="text-align: right">3.4</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">29.2</td>
+    <td style="text-align: right">27.0</td>
+    <td style="text-align: right">381.9</td>
+    <td style="text-align: right">0.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Milan, Italy</td>
+    <td style="text-align: right">18.2</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">27.1</td>
+    <td style="text-align: right">20.3</td>
+    <td style="text-align: right">123.1</td>
+    <td style="text-align: right">0.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Prague, Czech Republic</td>
+    <td style="text-align: right">18.2</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">2.9</td>
+    <td style="text-align: right">35.9</td>
+    <td style="text-align: right">34.0</td>
+    <td style="text-align: right">140.1</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Tirana, Albania</td>
+    <td style="text-align: right">18.1</td>
+    <td style="text-align: right">4.1</td>
+    <td style="text-align: right">5.1</td>
+    <td style="text-align: right">24.2</td>
+    <td style="text-align: right">19.5</td>
+    <td style="text-align: right">148.8</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Santos, Brazil</td>
+    <td style="text-align: right">18.1</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">5.0</td>
+    <td style="text-align: right">21.0</td>
+    <td style="text-align: right">20.0</td>
+    <td style="text-align: right">251.2</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Recife, Brazil</td>
+    <td style="text-align: right">17.8</td>
+    <td style="text-align: right">5.5</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">18.3</td>
+    <td style="text-align: right">16.3</td>
+    <td style="text-align: right">231.3</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Yerevan, Armenia</td>
+    <td style="text-align: right">17.5</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">7.1</td>
+    <td style="text-align: right">17.8</td>
+    <td style="text-align: right">14.1</td>
+    <td style="text-align: right">265.5</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Belgrade, Serbia</td>
+    <td style="text-align: right">17.2</td>
+    <td style="text-align: right">3.5</td>
+    <td style="text-align: right">3.9</td>
+    <td style="text-align: right">28.3</td>
+    <td style="text-align: right">25.5</td>
+    <td style="text-align: right">131.5</td>
+    <td style="text-align: right">0.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Paris, France</td>
+    <td style="text-align: right">17.0</td>
+    <td style="text-align: right">2.5</td>
+    <td style="text-align: right">2.7</td>
+    <td style="text-align: right">39.3</td>
+    <td style="text-align: right">37.2</td>
+    <td style="text-align: right">117.7</td>
+    <td style="text-align: right">0.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Santiago, Chile</td>
+    <td style="text-align: right">16.9</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">3.4</td>
+    <td style="text-align: right">21.5</td>
+    <td style="text-align: right">29.7</td>
+    <td style="text-align: right">138.6</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">London, United Kingdom</td>
+    <td style="text-align: right">16.7</td>
+    <td style="text-align: right">3.2</td>
+    <td style="text-align: right">5.7</td>
+    <td style="text-align: right">31.4</td>
+    <td style="text-align: right">17.5</td>
+    <td style="text-align: right">129.5</td>
+    <td style="text-align: right">0.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Guadalajara, Mexico</td>
+    <td style="text-align: right">16.6</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">5.8</td>
+    <td style="text-align: right">16.0</td>
+    <td style="text-align: right">17.4</td>
+    <td style="text-align: right">214.6</td>
+    <td style="text-align: right">0.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Monterrey, Mexico</td>
+    <td style="text-align: right">16.3</td>
+    <td style="text-align: right">5.2</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">19.2</td>
+    <td style="text-align: right">18.5</td>
+    <td style="text-align: right">205.7</td>
+    <td style="text-align: right">0.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bogota, Colombia</td>
+    <td style="text-align: right">16.2</td>
+    <td style="text-align: right">5.2</td>
+    <td style="text-align: right">5.2</td>
+    <td style="text-align: right">19.1</td>
+    <td style="text-align: right">19.3</td>
+    <td style="text-align: right">225.0</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Delhi, India</td>
+    <td style="text-align: right">16.1</td>
+    <td style="text-align: right">2.7</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">37.3</td>
+    <td style="text-align: right">25.1</td>
+    <td style="text-align: right">172.1</td>
+    <td style="text-align: right">0.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Tokyo, Japan</td>
+    <td style="text-align: right">16.0</td>
+    <td style="text-align: right">2.6</td>
+    <td style="text-align: right">3.1</td>
+    <td style="text-align: right">38.2</td>
+    <td style="text-align: right">31.8</td>
+    <td style="text-align: right">95.8</td>
+    <td style="text-align: right">1.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Curitiba, Brazil</td>
+    <td style="text-align: right">15.9</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">3.6</td>
+    <td style="text-align: right">23.9</td>
+    <td style="text-align: right">27.9</td>
+    <td style="text-align: right">203.5</td>
+    <td style="text-align: right">0.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Vienna, Austria</td>
+    <td style="text-align: right">15.8</td>
+    <td style="text-align: right">2.0</td>
+    <td style="text-align: right">3.0</td>
+    <td style="text-align: right">50.5</td>
+    <td style="text-align: right">32.8</td>
+    <td style="text-align: right">110.0</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Brno, Czech Republic</td>
+    <td style="text-align: right">15.8</td>
+    <td style="text-align: right">3.1</td>
+    <td style="text-align: right">3.0</td>
+    <td style="text-align: right">32.5</td>
+    <td style="text-align: right">33.4</td>
+    <td style="text-align: right">121.7</td>
+    <td style="text-align: right">0.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Baku, Azerbaijan</td>
+    <td style="text-align: right">15.7</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">5.3</td>
+    <td style="text-align: right">18.5</td>
+    <td style="text-align: right">18.9</td>
+    <td style="text-align: right">166.5</td>
+    <td style="text-align: right">0.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Saint Petersburg, Russia</td>
+    <td style="text-align: right">15.6</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">23.7</td>
+    <td style="text-align: right">25.3</td>
+    <td style="text-align: right">326.7</td>
+    <td style="text-align: right">0.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Nanjing, China</td>
+    <td style="text-align: right">15.6</td>
+    <td style="text-align: right">2.2</td>
+    <td style="text-align: right">2.1</td>
+    <td style="text-align: right">44.5</td>
+    <td style="text-align: right">46.9</td>
+    <td style="text-align: right">108.3</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bratislava, Slovakia</td>
+    <td style="text-align: right">15.4</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">27.1</td>
+    <td style="text-align: right">23.9</td>
+    <td style="text-align: right">107.0</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Cluj-Napoca, Romania</td>
+    <td style="text-align: right">15.1</td>
+    <td style="text-align: right">3.2</td>
+    <td style="text-align: right">3.5</td>
+    <td style="text-align: right">31.1</td>
+    <td style="text-align: right">28.8</td>
+    <td style="text-align: right">137.4</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Novi Sad, Serbia</td>
+    <td style="text-align: right">15.1</td>
+    <td style="text-align: right">3.1</td>
+    <td style="text-align: right">3.5</td>
+    <td style="text-align: right">31.9</td>
+    <td style="text-align: right">28.8</td>
+    <td style="text-align: right">122.0</td>
+    <td style="text-align: right">0.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Rome, Italy</td>
+    <td style="text-align: right">14.9</td>
+    <td style="text-align: right">3.4</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">29.6</td>
+    <td style="text-align: right">16.4</td>
+    <td style="text-align: right">104.1</td>
+    <td style="text-align: right">1.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Tbilisi, Georgia</td>
+    <td style="text-align: right">14.9</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">6.9</td>
+    <td style="text-align: right">16.0</td>
+    <td style="text-align: right">14.4</td>
+    <td style="text-align: right">210.6</td>
+    <td style="text-align: right">0.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bishkek, Kyrgyzstan</td>
+    <td style="text-align: right">14.9</td>
+    <td style="text-align: right">7.4</td>
+    <td style="text-align: right">7.6</td>
+    <td style="text-align: right">13.6</td>
+    <td style="text-align: right">13.2</td>
+    <td style="text-align: right">303.5</td>
+    <td style="text-align: right">0.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Tunis, Tunisia</td>
+    <td style="text-align: right">14.9</td>
+    <td style="text-align: right">5.0</td>
+    <td style="text-align: right">6.0</td>
+    <td style="text-align: right">19.8</td>
+    <td style="text-align: right">16.7</td>
+    <td style="text-align: right">175.3</td>
+    <td style="text-align: right">0.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Merida, Mexico</td>
+    <td style="text-align: right">14.8</td>
+    <td style="text-align: right">6.5</td>
+    <td style="text-align: right">8.7</td>
+    <td style="text-align: right">15.4</td>
+    <td style="text-align: right">11.5</td>
+    <td style="text-align: right">191.8</td>
+    <td style="text-align: right">0.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Lima, Peru</td>
+    <td style="text-align: right">14.8</td>
+    <td style="text-align: right">6.7</td>
+    <td style="text-align: right">5.5</td>
+    <td style="text-align: right">14.9</td>
+    <td style="text-align: right">18.1</td>
+    <td style="text-align: right">159.6</td>
+    <td style="text-align: right">0.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Heraklion, Greece</td>
+    <td style="text-align: right">14.8</td>
+    <td style="text-align: right">3.6</td>
+    <td style="text-align: right">4.1</td>
+    <td style="text-align: right">27.9</td>
+    <td style="text-align: right">24.3</td>
+    <td style="text-align: right">111.9</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Ljubljana, Slovenia</td>
+    <td style="text-align: right">14.7</td>
+    <td style="text-align: right">3.9</td>
+    <td style="text-align: right">3.8</td>
+    <td style="text-align: right">25.8</td>
+    <td style="text-align: right">26.6</td>
+    <td style="text-align: right">102.2</td>
+    <td style="text-align: right">1.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Casablanca, Morocco</td>
+    <td style="text-align: right">14.6</td>
+    <td style="text-align: right">5.8</td>
+    <td style="text-align: right">5.9</td>
+    <td style="text-align: right">17.4</td>
+    <td style="text-align: right">16.9</td>
+    <td style="text-align: right">116.8</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Budapest, Hungary</td>
+    <td style="text-align: right">14.6</td>
+    <td style="text-align: right">3.4</td>
+    <td style="text-align: right">3.6</td>
+    <td style="text-align: right">29.6</td>
+    <td style="text-align: right">28.0</td>
+    <td style="text-align: right">133.5</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kaliningrad, Russia</td>
+    <td style="text-align: right">14.5</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">4.1</td>
+    <td style="text-align: right">24.9</td>
+    <td style="text-align: right">24.3</td>
+    <td style="text-align: right">317.7</td>
+    <td style="text-align: right">0.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Nairobi, Kenya</td>
+    <td style="text-align: right">14.4</td>
+    <td style="text-align: right">7.3</td>
+    <td style="text-align: right">6.2</td>
+    <td style="text-align: right">13.7</td>
+    <td style="text-align: right">16.2</td>
+    <td style="text-align: right">224.1</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Gurgaon, India</td>
+    <td style="text-align: right">14.4</td>
+    <td style="text-align: right">3.0</td>
+    <td style="text-align: right">3.0</td>
+    <td style="text-align: right">33.5</td>
+    <td style="text-align: right">33.2</td>
+    <td style="text-align: right">154.1</td>
+    <td style="text-align: right">0.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Islamabad, Pakistan</td>
+    <td style="text-align: right">14.3</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">23.9</td>
+    <td style="text-align: right">20.3</td>
+    <td style="text-align: right">222.5</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Pristina, Kosovo (Disputed Territory)</td>
+    <td style="text-align: right">14.3</td>
+    <td style="text-align: right">3.2</td>
+    <td style="text-align: right">4.3</td>
+    <td style="text-align: right">31.5</td>
+    <td style="text-align: right">23.4</td>
+    <td style="text-align: right">106.8</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Porto, Portugal</td>
+    <td style="text-align: right">14.2</td>
+    <td style="text-align: right">5.5</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">18.3</td>
+    <td style="text-align: right">18.6</td>
+    <td style="text-align: right">100.5</td>
+    <td style="text-align: right">1.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Thessaloniki, Greece</td>
+    <td style="text-align: right">14.2</td>
+    <td style="text-align: right">3.5</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">28.8</td>
+    <td style="text-align: right">27.2</td>
+    <td style="text-align: right">120.2</td>
+    <td style="text-align: right">0.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Banja Luka, Bosnia And Herzegovina</td>
+    <td style="text-align: right">14.1</td>
+    <td style="text-align: right">3.0</td>
+    <td style="text-align: right">3.3</td>
+    <td style="text-align: right">32.8</td>
+    <td style="text-align: right">30.7</td>
+    <td style="text-align: right">106.9</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Porto Alegre, Brazil</td>
+    <td style="text-align: right">14.0</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">16.5</td>
+    <td style="text-align: right">20.8</td>
+    <td style="text-align: right">178.1</td>
+    <td style="text-align: right">0.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Athens, Greece</td>
+    <td style="text-align: right">14.0</td>
+    <td style="text-align: right">3.9</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">25.7</td>
+    <td style="text-align: right">25.2</td>
+    <td style="text-align: right">106.0</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Belo Horizonte, Brazil</td>
+    <td style="text-align: right">13.8</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">5.7</td>
+    <td style="text-align: right">20.2</td>
+    <td style="text-align: right">17.4</td>
+    <td style="text-align: right">174.5</td>
+    <td style="text-align: right">0.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Sao Paulo, Brazil</td>
+    <td style="text-align: right">13.8</td>
+    <td style="text-align: right">5.9</td>
+    <td style="text-align: right">5.1</td>
+    <td style="text-align: right">16.9</td>
+    <td style="text-align: right">19.6</td>
+    <td style="text-align: right">179.7</td>
+    <td style="text-align: right">0.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Barcelona, Spain</td>
+    <td style="text-align: right">13.8</td>
+    <td style="text-align: right">4.6</td>
+    <td style="text-align: right">5.0</td>
+    <td style="text-align: right">21.8</td>
+    <td style="text-align: right">20.2</td>
+    <td style="text-align: right">92.0</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Mexico City, Mexico</td>
+    <td style="text-align: right">13.6</td>
+    <td style="text-align: right">7.2</td>
+    <td style="text-align: right">7.8</td>
+    <td style="text-align: right">13.8</td>
+    <td style="text-align: right">12.8</td>
+    <td style="text-align: right">172.6</td>
+    <td style="text-align: right">0.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Santo Domingo, Dominican Republic</td>
+    <td style="text-align: right">13.4</td>
+    <td style="text-align: right">7.3</td>
+    <td style="text-align: right">6.2</td>
+    <td style="text-align: right">13.8</td>
+    <td style="text-align: right">16.1</td>
+    <td style="text-align: right">195.0</td>
+    <td style="text-align: right">0.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Chisinau, Moldova</td>
+    <td style="text-align: right">13.4</td>
+    <td style="text-align: right">5.8</td>
+    <td style="text-align: right">5.0</td>
+    <td style="text-align: right">17.2</td>
+    <td style="text-align: right">19.9</td>
+    <td style="text-align: right">145.1</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Rijeka, Croatia</td>
+    <td style="text-align: right">13.3</td>
+    <td style="text-align: right">3.6</td>
+    <td style="text-align: right">2.9</td>
+    <td style="text-align: right">27.5</td>
+    <td style="text-align: right">34.5</td>
+    <td style="text-align: right">94.6</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Madrid, Spain</td>
+    <td style="text-align: right">13.2</td>
+    <td style="text-align: right">3.8</td>
+    <td style="text-align: right">5.7</td>
+    <td style="text-align: right">26.0</td>
+    <td style="text-align: right">17.5</td>
+    <td style="text-align: right">88.8</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Panama City, Panama</td>
+    <td style="text-align: right">13.2</td>
+    <td style="text-align: right">8.6</td>
+    <td style="text-align: right">10.8</td>
+    <td style="text-align: right">11.6</td>
+    <td style="text-align: right">9.2</td>
+    <td style="text-align: right">116.5</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Buenos Aires, Argentina</td>
+    <td style="text-align: right">13.1</td>
+    <td style="text-align: right">6.7</td>
+    <td style="text-align: right">7.0</td>
+    <td style="text-align: right">15.0</td>
+    <td style="text-align: right">14.3</td>
+    <td style="text-align: right">718.4</td>
+    <td style="text-align: right">0.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Sarajevo, Bosnia And Herzegovina</td>
+    <td style="text-align: right">13.1</td>
+    <td style="text-align: right">3.6</td>
+    <td style="text-align: right">3.1</td>
+    <td style="text-align: right">27.8</td>
+    <td style="text-align: right">32.6</td>
+    <td style="text-align: right">96.8</td>
+    <td style="text-align: right">1.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Geneva, Switzerland</td>
+    <td style="text-align: right">13.1</td>
+    <td style="text-align: right">2.7</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">37.1</td>
+    <td style="text-align: right">35.3</td>
+    <td style="text-align: right">79.3</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Munich, Germany</td>
+    <td style="text-align: right">13.1</td>
+    <td style="text-align: right">2.9</td>
+    <td style="text-align: right">3.3</td>
+    <td style="text-align: right">34.7</td>
+    <td style="text-align: right">30.3</td>
+    <td style="text-align: right">94.8</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Odessa (Odesa), Ukraine</td>
+    <td style="text-align: right">13.0</td>
+    <td style="text-align: right">4.4</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">22.5</td>
+    <td style="text-align: right">20.8</td>
+    <td style="text-align: right">278.4</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Palma de Mallorca, Spain</td>
+    <td style="text-align: right">12.9</td>
+    <td style="text-align: right">4.5</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">22.5</td>
+    <td style="text-align: right">16.4</td>
+    <td style="text-align: right">86.7</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Campinas, Brazil</td>
+    <td style="text-align: right">12.9</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">20.7</td>
+    <td style="text-align: right">18.0</td>
+    <td style="text-align: right">158.2</td>
+    <td style="text-align: right">0.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kaohsiung, Taiwan</td>
+    <td style="text-align: right">12.9</td>
+    <td style="text-align: right">2.2</td>
+    <td style="text-align: right">2.2</td>
+    <td style="text-align: right">46.4</td>
+    <td style="text-align: right">44.8</td>
+    <td style="text-align: right">82.6</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Zurich, Switzerland</td>
+    <td style="text-align: right">12.8</td>
+    <td style="text-align: right">2.7</td>
+    <td style="text-align: right">3.1</td>
+    <td style="text-align: right">37.7</td>
+    <td style="text-align: right">31.9</td>
+    <td style="text-align: right">77.3</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Skopje, North Macedonia</td>
+    <td style="text-align: right">12.8</td>
+    <td style="text-align: right">3.4</td>
+    <td style="text-align: right">3.9</td>
+    <td style="text-align: right">29.4</td>
+    <td style="text-align: right">25.9</td>
+    <td style="text-align: right">95.0</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Cairo, Egypt</td>
+    <td style="text-align: right">12.7</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">7.7</td>
+    <td style="text-align: right">16.5</td>
+    <td style="text-align: right">13.0</td>
+    <td style="text-align: right">210.9</td>
+    <td style="text-align: right">0.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Lausanne, Switzerland</td>
+    <td style="text-align: right">12.5</td>
+    <td style="text-align: right">2.5</td>
+    <td style="text-align: right">2.7</td>
+    <td style="text-align: right">39.3</td>
+    <td style="text-align: right">37.2</td>
+    <td style="text-align: right">75.8</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Patna, India</td>
+    <td style="text-align: right">12.5</td>
+    <td style="text-align: right">1.8</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">56.7</td>
+    <td style="text-align: right">35.8</td>
+    <td style="text-align: right">139.9</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Brasov, Romania</td>
+    <td style="text-align: right">12.5</td>
+    <td style="text-align: right">5.0</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">20.2</td>
+    <td style="text-align: right">21.1</td>
+    <td style="text-align: right">118.9</td>
+    <td style="text-align: right">0.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Sydney, Australia</td>
+    <td style="text-align: right">12.5</td>
+    <td style="text-align: right">4.4</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">22.8</td>
+    <td style="text-align: right">20.4</td>
+    <td style="text-align: right">106.2</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Florence, Italy</td>
+    <td style="text-align: right">12.5</td>
+    <td style="text-align: right">5.1</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">19.6</td>
+    <td style="text-align: right">17.7</td>
+    <td style="text-align: right">84.8</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Stockholm, Sweden</td>
+    <td style="text-align: right">12.5</td>
+    <td style="text-align: right">3.2</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">30.8</td>
+    <td style="text-align: right">27.0</td>
+    <td style="text-align: right">86.8</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Krakow (Cracow), Poland</td>
+    <td style="text-align: right">12.5</td>
+    <td style="text-align: right">3.3</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">30.2</td>
+    <td style="text-align: right">23.8</td>
+    <td style="text-align: right">113.6</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Nis, Serbia</td>
+    <td style="text-align: right">12.4</td>
+    <td style="text-align: right">3.2</td>
+    <td style="text-align: right">3.1</td>
+    <td style="text-align: right">31.7</td>
+    <td style="text-align: right">32.5</td>
+    <td style="text-align: right">100.3</td>
+    <td style="text-align: right">1.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kiev (Kyiv), Ukraine</td>
+    <td style="text-align: right">12.4</td>
+    <td style="text-align: right">5.2</td>
+    <td style="text-align: right">6.8</td>
+    <td style="text-align: right">19.3</td>
+    <td style="text-align: right">14.6</td>
+    <td style="text-align: right">229.1</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Ulaanbaatar, Mongolia</td>
+    <td style="text-align: right">12.3</td>
+    <td style="text-align: right">8.2</td>
+    <td style="text-align: right">11.2</td>
+    <td style="text-align: right">12.2</td>
+    <td style="text-align: right">8.9</td>
+    <td style="text-align: right">145.1</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Sliema, Malta</td>
+    <td style="text-align: right">12.3</td>
+    <td style="text-align: right">7.0</td>
+    <td style="text-align: right">7.9</td>
+    <td style="text-align: right">14.3</td>
+    <td style="text-align: right">12.7</td>
+    <td style="text-align: right">80.8</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">San Sebastian, Spain</td>
+    <td style="text-align: right">12.2</td>
+    <td style="text-align: right">3.0</td>
+    <td style="text-align: right">4.5</td>
+    <td style="text-align: right">32.9</td>
+    <td style="text-align: right">22.2</td>
+    <td style="text-align: right">83.6</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Qingdao, Shandong, China</td>
+    <td style="text-align: right">12.1</td>
+    <td style="text-align: right">2.3</td>
+    <td style="text-align: right">2.3</td>
+    <td style="text-align: right">42.9</td>
+    <td style="text-align: right">43.6</td>
+    <td style="text-align: right">83.6</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bolzano-Bozen, Italy</td>
+    <td style="text-align: right">12.1</td>
+    <td style="text-align: right">2.9</td>
+    <td style="text-align: right">3.9</td>
+    <td style="text-align: right">34.6</td>
+    <td style="text-align: right">25.6</td>
+    <td style="text-align: right">86.9</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Coimbatore, India</td>
+    <td style="text-align: right">12.1</td>
+    <td style="text-align: right">2.9</td>
+    <td style="text-align: right">3.2</td>
+    <td style="text-align: right">34.9</td>
+    <td style="text-align: right">30.8</td>
+    <td style="text-align: right">135.4</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Vilnius, Lithuania</td>
+    <td style="text-align: right">12.0</td>
+    <td style="text-align: right">3.1</td>
+    <td style="text-align: right">3.9</td>
+    <td style="text-align: right">32.6</td>
+    <td style="text-align: right">25.4</td>
+    <td style="text-align: right">88.2</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Craiova, Romania</td>
+    <td style="text-align: right">12.0</td>
+    <td style="text-align: right">4.3</td>
+    <td style="text-align: right">4.1</td>
+    <td style="text-align: right">23.3</td>
+    <td style="text-align: right">24.1</td>
+    <td style="text-align: right">110.3</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bhubaneswar, India</td>
+    <td style="text-align: right">12.0</td>
+    <td style="text-align: right">2.9</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">34.9</td>
+    <td style="text-align: right">25.1</td>
+    <td style="text-align: right">131.4</td>
+    <td style="text-align: right">0.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Florianopolis, Brazil</td>
+    <td style="text-align: right">12.0</td>
+    <td style="text-align: right">5.1</td>
+    <td style="text-align: right">6.6</td>
+    <td style="text-align: right">19.8</td>
+    <td style="text-align: right">15.2</td>
+    <td style="text-align: right">146.9</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Plzen, Czech Republic</td>
+    <td style="text-align: right">12.0</td>
+    <td style="text-align: right">2.7</td>
+    <td style="text-align: right">3.2</td>
+    <td style="text-align: right">36.8</td>
+    <td style="text-align: right">30.8</td>
+    <td style="text-align: right">92.2</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Asuncion, Paraguay</td>
+    <td style="text-align: right">11.8</td>
+    <td style="text-align: right">7.3</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">13.7</td>
+    <td style="text-align: right">16.0</td>
+    <td style="text-align: right">138.4</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Chengdu, China</td>
+    <td style="text-align: right">11.8</td>
+    <td style="text-align: right">2.7</td>
+    <td style="text-align: right">3.0</td>
+    <td style="text-align: right">37.5</td>
+    <td style="text-align: right">33.2</td>
+    <td style="text-align: right">82.2</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Vancouver, Canada</td>
+    <td style="text-align: right">11.7</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">21.4</td>
+    <td style="text-align: right">20.9</td>
+    <td style="text-align: right">88.4</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Warsaw, Poland</td>
+    <td style="text-align: right">11.7</td>
+    <td style="text-align: right">4.4</td>
+    <td style="text-align: right">5.1</td>
+    <td style="text-align: right">22.9</td>
+    <td style="text-align: right">19.6</td>
+    <td style="text-align: right">108.0</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Basel, Switzerland</td>
+    <td style="text-align: right">11.7</td>
+    <td style="text-align: right">2.4</td>
+    <td style="text-align: right">2.3</td>
+    <td style="text-align: right">42.3</td>
+    <td style="text-align: right">42.7</td>
+    <td style="text-align: right">74.6</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Podgorica, Montenegro</td>
+    <td style="text-align: right">11.7</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">20.5</td>
+    <td style="text-align: right">20.5</td>
+    <td style="text-align: right">95.6</td>
+    <td style="text-align: right">1.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Brasilia, Brazil</td>
+    <td style="text-align: right">11.7</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">20.8</td>
+    <td style="text-align: right">25.1</td>
+    <td style="text-align: right">151.2</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Gdansk, Poland</td>
+    <td style="text-align: right">11.6</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">26.7</td>
+    <td style="text-align: right">21.4</td>
+    <td style="text-align: right">106.4</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Toronto, Canada</td>
+    <td style="text-align: right">11.6</td>
+    <td style="text-align: right">3.9</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">25.6</td>
+    <td style="text-align: right">23.6</td>
+    <td style="text-align: right">89.9</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Valencia, Spain</td>
+    <td style="text-align: right">11.6</td>
+    <td style="text-align: right">5.1</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">19.7</td>
+    <td style="text-align: right">16.0</td>
+    <td style="text-align: right">80.4</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Almaty, Kazakhstan</td>
+    <td style="text-align: right">11.6</td>
+    <td style="text-align: right">6.9</td>
+    <td style="text-align: right">7.9</td>
+    <td style="text-align: right">14.5</td>
+    <td style="text-align: right">12.7</td>
+    <td style="text-align: right">244.0</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Constanta, Romania</td>
+    <td style="text-align: right">11.6</td>
+    <td style="text-align: right">5.3</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">18.9</td>
+    <td style="text-align: right">20.3</td>
+    <td style="text-align: right">107.4</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kosice, Slovakia</td>
+    <td style="text-align: right">11.5</td>
+    <td style="text-align: right">5.2</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">19.3</td>
+    <td style="text-align: right">18.7</td>
+    <td style="text-align: right">82.4</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Mississauga, Canada</td>
+    <td style="text-align: right">11.4</td>
+    <td style="text-align: right">4.4</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">22.8</td>
+    <td style="text-align: right">21.2</td>
+    <td style="text-align: right">87.8</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Batumi, Ajara, Georgia</td>
+    <td style="text-align: right">11.4</td>
+    <td style="text-align: right">6.8</td>
+    <td style="text-align: right">7.0</td>
+    <td style="text-align: right">14.7</td>
+    <td style="text-align: right">14.3</td>
+    <td style="text-align: right">157.4</td>
+    <td style="text-align: right">0.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bern, Switzerland</td>
+    <td style="text-align: right">11.4</td>
+    <td style="text-align: right">2.3</td>
+    <td style="text-align: right">2.1</td>
+    <td style="text-align: right">43.3</td>
+    <td style="text-align: right">47.8</td>
+    <td style="text-align: right">70.1</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Helsinki, Finland</td>
+    <td style="text-align: right">11.4</td>
+    <td style="text-align: right">2.9</td>
+    <td style="text-align: right">4.5</td>
+    <td style="text-align: right">34.5</td>
+    <td style="text-align: right">22.1</td>
+    <td style="text-align: right">82.9</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Chittagong, Bangladesh</td>
+    <td style="text-align: right">11.3</td>
+    <td style="text-align: right">3.8</td>
+    <td style="text-align: right">3.5</td>
+    <td style="text-align: right">26.5</td>
+    <td style="text-align: right">28.9</td>
+    <td style="text-align: right">144.5</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Varna, Bulgaria</td>
+    <td style="text-align: right">11.2</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">4.6</td>
+    <td style="text-align: right">23.7</td>
+    <td style="text-align: right">21.5</td>
+    <td style="text-align: right">75.6</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Rabat, Morocco</td>
+    <td style="text-align: right">11.2</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">16.4</td>
+    <td style="text-align: right">16.4</td>
+    <td style="text-align: right">85.0</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Montevideo, Uruguay</td>
+    <td style="text-align: right">11.1</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">23.6</td>
+    <td style="text-align: right">18.6</td>
+    <td style="text-align: right">93.2</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Berlin, Germany</td>
+    <td style="text-align: right">11.1</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">27.0</td>
+    <td style="text-align: right">24.7</td>
+    <td style="text-align: right">80.2</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Hamburg, Germany</td>
+    <td style="text-align: right">11.1</td>
+    <td style="text-align: right">2.7</td>
+    <td style="text-align: right">4.1</td>
+    <td style="text-align: right">36.7</td>
+    <td style="text-align: right">24.6</td>
+    <td style="text-align: right">79.1</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Sofia, Bulgaria</td>
+    <td style="text-align: right">11.0</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">25.0</td>
+    <td style="text-align: right">24.8</td>
+    <td style="text-align: right">72.8</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kolkata, India</td>
+    <td style="text-align: right">11.0</td>
+    <td style="text-align: right">3.5</td>
+    <td style="text-align: right">3.6</td>
+    <td style="text-align: right">28.6</td>
+    <td style="text-align: right">27.5</td>
+    <td style="text-align: right">125.7</td>
+    <td style="text-align: right">0.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Oslo, Norway</td>
+    <td style="text-align: right">11.0</td>
+    <td style="text-align: right">3.4</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">29.7</td>
+    <td style="text-align: right">23.6</td>
+    <td style="text-align: right">87.9</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Wroclaw, Poland</td>
+    <td style="text-align: right">11.0</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">4.4</td>
+    <td style="text-align: right">25.3</td>
+    <td style="text-align: right">22.7</td>
+    <td style="text-align: right">102.7</td>
+    <td style="text-align: right">1.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bucharest, Romania</td>
+    <td style="text-align: right">11.0</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">4.3</td>
+    <td style="text-align: right">26.8</td>
+    <td style="text-align: right">23.1</td>
+    <td style="text-align: right">101.8</td>
+    <td style="text-align: right">1.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Sao Jose dos Campos, Brazil</td>
+    <td style="text-align: right">11.0</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">5.3</td>
+    <td style="text-align: right">17.7</td>
+    <td style="text-align: right">18.7</td>
+    <td style="text-align: right">136.7</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">New York, NY, United States</td>
+    <td style="text-align: right">10.9</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">9.7</td>
+    <td style="text-align: right">17.8</td>
+    <td style="text-align: right">10.3</td>
+    <td style="text-align: right">95.6</td>
+    <td style="text-align: right">1.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Brighton, United Kingdom</td>
+    <td style="text-align: right">10.9</td>
+    <td style="text-align: right">4.5</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">22.1</td>
+    <td style="text-align: right">20.6</td>
+    <td style="text-align: right">87.2</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Nice, France</td>
+    <td style="text-align: right">10.8</td>
+    <td style="text-align: right">3.2</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">31.3</td>
+    <td style="text-align: right">21.2</td>
+    <td style="text-align: right">78.2</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Burgas, Bulgaria</td>
+    <td style="text-align: right">10.8</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">4.6</td>
+    <td style="text-align: right">24.0</td>
+    <td style="text-align: right">21.7</td>
+    <td style="text-align: right">73.7</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Zagreb, Croatia</td>
+    <td style="text-align: right">10.8</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">27.2</td>
+    <td style="text-align: right">23.6</td>
+    <td style="text-align: right">73.3</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Minsk, Belarus</td>
+    <td style="text-align: right">10.8</td>
+    <td style="text-align: right">5.1</td>
+    <td style="text-align: right">5.3</td>
+    <td style="text-align: right">19.8</td>
+    <td style="text-align: right">18.9</td>
+    <td style="text-align: right">183.8</td>
+    <td style="text-align: right">0.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Copenhagen, Denmark</td>
+    <td style="text-align: right">10.7</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">27.2</td>
+    <td style="text-align: right">27.0</td>
+    <td style="text-align: right">77.0</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Iasi, Romania</td>
+    <td style="text-align: right">10.7</td>
+    <td style="text-align: right">3.8</td>
+    <td style="text-align: right">4.5</td>
+    <td style="text-align: right">26.2</td>
+    <td style="text-align: right">22.0</td>
+    <td style="text-align: right">101.7</td>
+    <td style="text-align: right">1.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Heidelberg, Germany</td>
+    <td style="text-align: right">10.7</td>
+    <td style="text-align: right">3.8</td>
+    <td style="text-align: right">4.4</td>
+    <td style="text-align: right">26.2</td>
+    <td style="text-align: right">22.9</td>
+    <td style="text-align: right">77.3</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bologna, Italy</td>
+    <td style="text-align: right">10.6</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">21.0</td>
+    <td style="text-align: right">20.3</td>
+    <td style="text-align: right">72.3</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Luxembourg, Luxembourg</td>
+    <td style="text-align: right">10.6</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">27.2</td>
+    <td style="text-align: right">21.0</td>
+    <td style="text-align: right">75.5</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Lugano, Switzerland</td>
+    <td style="text-align: right">10.5</td>
+    <td style="text-align: right">2.2</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">45.0</td>
+    <td style="text-align: right">36.3</td>
+    <td style="text-align: right">65.7</td>
+    <td style="text-align: right">1.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Auckland, New Zealand</td>
+    <td style="text-align: right">10.5</td>
+    <td style="text-align: right">3.4</td>
+    <td style="text-align: right">4.5</td>
+    <td style="text-align: right">29.4</td>
+    <td style="text-align: right">22.1</td>
+    <td style="text-align: right">86.8</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Oradea, Romania</td>
+    <td style="text-align: right">10.5</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">3.1</td>
+    <td style="text-align: right">25.1</td>
+    <td style="text-align: right">31.8</td>
+    <td style="text-align: right">98.5</td>
+    <td style="text-align: right">1.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Cologne, Germany</td>
+    <td style="text-align: right">10.5</td>
+    <td style="text-align: right">3.4</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">29.7</td>
+    <td style="text-align: right">27.4</td>
+    <td style="text-align: right">75.5</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bilbao, Spain</td>
+    <td style="text-align: right">10.4</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">6.0</td>
+    <td style="text-align: right">20.3</td>
+    <td style="text-align: right">16.8</td>
+    <td style="text-align: right">68.9</td>
+    <td style="text-align: right">1.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Wuhan, China</td>
+    <td style="text-align: right">10.3</td>
+    <td style="text-align: right">2.6</td>
+    <td style="text-align: right">3.1</td>
+    <td style="text-align: right">38.1</td>
+    <td style="text-align: right">32.7</td>
+    <td style="text-align: right">71.2</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Malaga, Spain</td>
+    <td style="text-align: right">10.3</td>
+    <td style="text-align: right">5.8</td>
+    <td style="text-align: right">7.0</td>
+    <td style="text-align: right">17.4</td>
+    <td style="text-align: right">14.2</td>
+    <td style="text-align: right">71.7</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Antalya, Turkey</td>
+    <td style="text-align: right">10.1</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">7.0</td>
+    <td style="text-align: right">20.2</td>
+    <td style="text-align: right">14.4</td>
+    <td style="text-align: right">422.2</td>
+    <td style="text-align: right">0.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Quito, Ecuador</td>
+    <td style="text-align: right">10.1</td>
+    <td style="text-align: right">6.0</td>
+    <td style="text-align: right">8.5</td>
+    <td style="text-align: right">16.7</td>
+    <td style="text-align: right">11.7</td>
+    <td style="text-align: right">117.3</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Tallinn, Estonia</td>
+    <td style="text-align: right">10.1</td>
+    <td style="text-align: right">3.6</td>
+    <td style="text-align: right">3.8</td>
+    <td style="text-align: right">27.6</td>
+    <td style="text-align: right">26.6</td>
+    <td style="text-align: right">71.6</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Istanbul, Turkey</td>
+    <td style="text-align: right">10.1</td>
+    <td style="text-align: right">7.4</td>
+    <td style="text-align: right">8.5</td>
+    <td style="text-align: right">13.5</td>
+    <td style="text-align: right">11.7</td>
+    <td style="text-align: right">416.1</td>
+    <td style="text-align: right">0.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Adelaide, Australia</td>
+    <td style="text-align: right">10.1</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">4.3</td>
+    <td style="text-align: right">26.9</td>
+    <td style="text-align: right">23.1</td>
+    <td style="text-align: right">85.9</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Chongqing, China</td>
+    <td style="text-align: right">10.0</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">2.5</td>
+    <td style="text-align: right">26.8</td>
+    <td style="text-align: right">39.7</td>
+    <td style="text-align: right">69.4</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Guildford, United Kingdom</td>
+    <td style="text-align: right">9.9</td>
+    <td style="text-align: right">5.0</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">20.0</td>
+    <td style="text-align: right">21.4</td>
+    <td style="text-align: right">79.6</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Canberra, Australia</td>
+    <td style="text-align: right">9.9</td>
+    <td style="text-align: right">3.5</td>
+    <td style="text-align: right">4.1</td>
+    <td style="text-align: right">28.6</td>
+    <td style="text-align: right">24.1</td>
+    <td style="text-align: right">84.3</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Amsterdam, Netherlands</td>
+    <td style="text-align: right">9.9</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">5.5</td>
+    <td style="text-align: right">20.4</td>
+    <td style="text-align: right">18.0</td>
+    <td style="text-align: right">69.4</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Trento, Italy</td>
+    <td style="text-align: right">9.9</td>
+    <td style="text-align: right">5.1</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">19.5</td>
+    <td style="text-align: right">17.8</td>
+    <td style="text-align: right">73.3</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Tashkent, Uzbekistan</td>
+    <td style="text-align: right">9.8</td>
+    <td style="text-align: right">8.3</td>
+    <td style="text-align: right">8.5</td>
+    <td style="text-align: right">12.0</td>
+    <td style="text-align: right">11.8</td>
+    <td style="text-align: right">234.0</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Queretaro (Santiago de Querétaro), Mexico</td>
+    <td style="text-align: right">9.7</td>
+    <td style="text-align: right">8.2</td>
+    <td style="text-align: right">8.9</td>
+    <td style="text-align: right">12.2</td>
+    <td style="text-align: right">11.2</td>
+    <td style="text-align: right">128.4</td>
+    <td style="text-align: right">0.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Dusseldorf, Germany</td>
+    <td style="text-align: right">9.7</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">35.4</td>
+    <td style="text-align: right">25.3</td>
+    <td style="text-align: right">70.2</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">San Jose, Costa Rica</td>
+    <td style="text-align: right">9.6</td>
+    <td style="text-align: right">9.4</td>
+    <td style="text-align: right">8.7</td>
+    <td style="text-align: right">10.7</td>
+    <td style="text-align: right">11.5</td>
+    <td style="text-align: right">106.1</td>
+    <td style="text-align: right">0.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Honolulu, HI, United States</td>
+    <td style="text-align: right">9.6</td>
+    <td style="text-align: right">7.0</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">14.3</td>
+    <td style="text-align: right">16.4</td>
+    <td style="text-align: right">84.4</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Dnipro, Ukraine</td>
+    <td style="text-align: right">9.6</td>
+    <td style="text-align: right">7.8</td>
+    <td style="text-align: right">7.8</td>
+    <td style="text-align: right">12.9</td>
+    <td style="text-align: right">12.8</td>
+    <td style="text-align: right">178.4</td>
+    <td style="text-align: right">0.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bordeaux, France</td>
+    <td style="text-align: right">9.6</td>
+    <td style="text-align: right">3.0</td>
+    <td style="text-align: right">3.6</td>
+    <td style="text-align: right">33.8</td>
+    <td style="text-align: right">28.1</td>
+    <td style="text-align: right">69.1</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Wellington, New Zealand</td>
+    <td style="text-align: right">9.5</td>
+    <td style="text-align: right">3.9</td>
+    <td style="text-align: right">6.5</td>
+    <td style="text-align: right">26.0</td>
+    <td style="text-align: right">15.5</td>
+    <td style="text-align: right">79.4</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Amman, Jordan</td>
+    <td style="text-align: right">9.5</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">5.1</td>
+    <td style="text-align: right">17.9</td>
+    <td style="text-align: right">19.5</td>
+    <td style="text-align: right">87.7</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Gold Coast, Australia</td>
+    <td style="text-align: right">9.5</td>
+    <td style="text-align: right">4.6</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">21.8</td>
+    <td style="text-align: right">20.3</td>
+    <td style="text-align: right">80.0</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Timisoara, Romania</td>
+    <td style="text-align: right">9.5</td>
+    <td style="text-align: right">4.3</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">23.5</td>
+    <td style="text-align: right">25.3</td>
+    <td style="text-align: right">87.1</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Rimini, Italy</td>
+    <td style="text-align: right">9.4</td>
+    <td style="text-align: right">3.9</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">25.9</td>
+    <td style="text-align: right">18.4</td>
+    <td style="text-align: right">63.0</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Seville (Sevilla), Spain</td>
+    <td style="text-align: right">9.3</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">6.7</td>
+    <td style="text-align: right">23.6</td>
+    <td style="text-align: right">14.8</td>
+    <td style="text-align: right">64.2</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Jinan, China</td>
+    <td style="text-align: right">9.3</td>
+    <td style="text-align: right">2.5</td>
+    <td style="text-align: right">2.7</td>
+    <td style="text-align: right">39.7</td>
+    <td style="text-align: right">37.0</td>
+    <td style="text-align: right">62.7</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Xi'an, China</td>
+    <td style="text-align: right">9.3</td>
+    <td style="text-align: right">3.6</td>
+    <td style="text-align: right">2.5</td>
+    <td style="text-align: right">28.0</td>
+    <td style="text-align: right">40.4</td>
+    <td style="text-align: right">63.9</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Naples, Italy</td>
+    <td style="text-align: right">9.3</td>
+    <td style="text-align: right">5.2</td>
+    <td style="text-align: right">6.6</td>
+    <td style="text-align: right">19.3</td>
+    <td style="text-align: right">15.2</td>
+    <td style="text-align: right">62.3</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kuwait City, Kuwait</td>
+    <td style="text-align: right">9.3</td>
+    <td style="text-align: right">4.1</td>
+    <td style="text-align: right">6.2</td>
+    <td style="text-align: right">24.5</td>
+    <td style="text-align: right">16.1</td>
+    <td style="text-align: right">82.9</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Oxford, United Kingdom</td>
+    <td style="text-align: right">9.2</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">5.0</td>
+    <td style="text-align: right">17.8</td>
+    <td style="text-align: right">19.8</td>
+    <td style="text-align: right">71.9</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Paphos, Cyprus</td>
+    <td style="text-align: right">9.2</td>
+    <td style="text-align: right">5.8</td>
+    <td style="text-align: right">8.8</td>
+    <td style="text-align: right">17.3</td>
+    <td style="text-align: right">11.4</td>
+    <td style="text-align: right">63.3</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Pisa, Italy</td>
+    <td style="text-align: right">9.2</td>
+    <td style="text-align: right">6.2</td>
+    <td style="text-align: right">5.9</td>
+    <td style="text-align: right">16.2</td>
+    <td style="text-align: right">17.0</td>
+    <td style="text-align: right">65.7</td>
+    <td style="text-align: right">1.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Marseille, France</td>
+    <td style="text-align: right">9.2</td>
+    <td style="text-align: right">3.8</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">26.6</td>
+    <td style="text-align: right">23.9</td>
+    <td style="text-align: right">66.2</td>
+    <td style="text-align: right">1.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Penang, Malaysia</td>
+    <td style="text-align: right">9.2</td>
+    <td style="text-align: right">3.6</td>
+    <td style="text-align: right">4.6</td>
+    <td style="text-align: right">28.0</td>
+    <td style="text-align: right">21.9</td>
+    <td style="text-align: right">69.5</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Szczecin, Poland</td>
+    <td style="text-align: right">9.1</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">4.4</td>
+    <td style="text-align: right">23.6</td>
+    <td style="text-align: right">22.8</td>
+    <td style="text-align: right">83.7</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kaunas, Lithuania</td>
+    <td style="text-align: right">9.0</td>
+    <td style="text-align: right">3.5</td>
+    <td style="text-align: right">3.9</td>
+    <td style="text-align: right">28.5</td>
+    <td style="text-align: right">25.6</td>
+    <td style="text-align: right">65.8</td>
+    <td style="text-align: right">1.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Dublin, Ireland</td>
+    <td style="text-align: right">9.0</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">7.9</td>
+    <td style="text-align: right">16.0</td>
+    <td style="text-align: right">12.7</td>
+    <td style="text-align: right">64.5</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Haifa, Israel</td>
+    <td style="text-align: right">9.0</td>
+    <td style="text-align: right">2.3</td>
+    <td style="text-align: right">2.7</td>
+    <td style="text-align: right">43.1</td>
+    <td style="text-align: right">37.3</td>
+    <td style="text-align: right">72.3</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Chennai, India</td>
+    <td style="text-align: right">8.8</td>
+    <td style="text-align: right">2.7</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">36.6</td>
+    <td style="text-align: right">25.2</td>
+    <td style="text-align: right">100.3</td>
+    <td style="text-align: right">1.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Braga, Portugal</td>
+    <td style="text-align: right">8.7</td>
+    <td style="text-align: right">7.6</td>
+    <td style="text-align: right">7.9</td>
+    <td style="text-align: right">13.1</td>
+    <td style="text-align: right">12.6</td>
+    <td style="text-align: right">60.9</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Limassol, Cyprus</td>
+    <td style="text-align: right">8.7</td>
+    <td style="text-align: right">6.2</td>
+    <td style="text-align: right">7.0</td>
+    <td style="text-align: right">16.1</td>
+    <td style="text-align: right">14.3</td>
+    <td style="text-align: right">62.6</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Haarlem, Netherlands</td>
+    <td style="text-align: right">8.6</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">5.5</td>
+    <td style="text-align: right">20.5</td>
+    <td style="text-align: right">18.3</td>
+    <td style="text-align: right">62.6</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Poznan, Poland</td>
+    <td style="text-align: right">8.6</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">21.2</td>
+    <td style="text-align: right">21.4</td>
+    <td style="text-align: right">79.1</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Cambridge, United Kingdom</td>
+    <td style="text-align: right">8.6</td>
+    <td style="text-align: right">4.5</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">22.4</td>
+    <td style="text-align: right">17.8</td>
+    <td style="text-align: right">68.5</td>
+    <td style="text-align: right">1.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Riga, Latvia</td>
+    <td style="text-align: right">8.6</td>
+    <td style="text-align: right">4.3</td>
+    <td style="text-align: right">4.4</td>
+    <td style="text-align: right">23.4</td>
+    <td style="text-align: right">22.9</td>
+    <td style="text-align: right">65.6</td>
+    <td style="text-align: right">1.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kuala Lumpur, Malaysia</td>
+    <td style="text-align: right">8.6</td>
+    <td style="text-align: right">3.5</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">28.8</td>
+    <td style="text-align: right">18.4</td>
+    <td style="text-align: right">64.0</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Victoria, Canada</td>
+    <td style="text-align: right">8.5</td>
+    <td style="text-align: right">6.0</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">16.8</td>
+    <td style="text-align: right">15.8</td>
+    <td style="text-align: right">64.9</td>
+    <td style="text-align: right">1.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Lodz, Poland</td>
+    <td style="text-align: right">8.5</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">24.1</td>
+    <td style="text-align: right">24.1</td>
+    <td style="text-align: right">77.5</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Espoo, Finland</td>
+    <td style="text-align: right">8.5</td>
+    <td style="text-align: right">3.6</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">28.0</td>
+    <td style="text-align: right">21.3</td>
+    <td style="text-align: right">59.0</td>
+    <td style="text-align: right">1.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Jaipur, India</td>
+    <td style="text-align: right">8.5</td>
+    <td style="text-align: right">5.0</td>
+    <td style="text-align: right">5.7</td>
+    <td style="text-align: right">19.8</td>
+    <td style="text-align: right">17.5</td>
+    <td style="text-align: right">88.1</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bangalore, India</td>
+    <td style="text-align: right">8.4</td>
+    <td style="text-align: right">4.5</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">22.2</td>
+    <td style="text-align: right">20.5</td>
+    <td style="text-align: right">87.9</td>
+    <td style="text-align: right">1.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Waterloo, Canada</td>
+    <td style="text-align: right">8.4</td>
+    <td style="text-align: right">5.5</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">18.2</td>
+    <td style="text-align: right">20.6</td>
+    <td style="text-align: right">67.3</td>
+    <td style="text-align: right">1.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Toulouse, France</td>
+    <td style="text-align: right">8.4</td>
+    <td style="text-align: right">3.0</td>
+    <td style="text-align: right">4.3</td>
+    <td style="text-align: right">33.8</td>
+    <td style="text-align: right">23.4</td>
+    <td style="text-align: right">59.8</td>
+    <td style="text-align: right">1.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Plovdiv, Bulgaria</td>
+    <td style="text-align: right">8.4</td>
+    <td style="text-align: right">5.0</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">20.0</td>
+    <td style="text-align: right">18.5</td>
+    <td style="text-align: right">56.1</td>
+    <td style="text-align: right">1.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Lund, Sweden</td>
+    <td style="text-align: right">8.3</td>
+    <td style="text-align: right">3.2</td>
+    <td style="text-align: right">4.4</td>
+    <td style="text-align: right">31.0</td>
+    <td style="text-align: right">22.6</td>
+    <td style="text-align: right">62.0</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Turin, Italy</td>
+    <td style="text-align: right">8.3</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">5.9</td>
+    <td style="text-align: right">24.7</td>
+    <td style="text-align: right">16.9</td>
+    <td style="text-align: right">55.9</td>
+    <td style="text-align: right">1.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Montpellier, France</td>
+    <td style="text-align: right">8.3</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">3.9</td>
+    <td style="text-align: right">26.8</td>
+    <td style="text-align: right">25.6</td>
+    <td style="text-align: right">59.7</td>
+    <td style="text-align: right">1.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Alicante, Spain</td>
+    <td style="text-align: right">8.3</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">8.2</td>
+    <td style="text-align: right">20.8</td>
+    <td style="text-align: right">12.3</td>
+    <td style="text-align: right">55.1</td>
+    <td style="text-align: right">1.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kharkiv, Ukraine</td>
+    <td style="text-align: right">8.3</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">18.5</td>
+    <td style="text-align: right">20.6</td>
+    <td style="text-align: right">151.7</td>
+    <td style="text-align: right">0.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Lyon, France</td>
+    <td style="text-align: right">8.2</td>
+    <td style="text-align: right">3.3</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">30.1</td>
+    <td style="text-align: right">27.1</td>
+    <td style="text-align: right">58.6</td>
+    <td style="text-align: right">1.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bristol, United Kingdom</td>
+    <td style="text-align: right">8.2</td>
+    <td style="text-align: right">5.8</td>
+    <td style="text-align: right">5.7</td>
+    <td style="text-align: right">17.1</td>
+    <td style="text-align: right">17.4</td>
+    <td style="text-align: right">64.3</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Los Angeles, CA, United States</td>
+    <td style="text-align: right">8.2</td>
+    <td style="text-align: right">7.5</td>
+    <td style="text-align: right">7.0</td>
+    <td style="text-align: right">13.3</td>
+    <td style="text-align: right">14.3</td>
+    <td style="text-align: right">72.5</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Harare, Zimbabwe</td>
+    <td style="text-align: right">8.1</td>
+    <td style="text-align: right">11.3</td>
+    <td style="text-align: right">19.8</td>
+    <td style="text-align: right">8.8</td>
+    <td style="text-align: right">5.0</td>
+    <td style="text-align: right">119.0</td>
+    <td style="text-align: right">0.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Edinburgh, United Kingdom</td>
+    <td style="text-align: right">8.1</td>
+    <td style="text-align: right">5.3</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">19.0</td>
+    <td style="text-align: right">18.0</td>
+    <td style="text-align: right">63.3</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Karlsruhe, Germany</td>
+    <td style="text-align: right">8.1</td>
+    <td style="text-align: right">3.3</td>
+    <td style="text-align: right">4.6</td>
+    <td style="text-align: right">29.9</td>
+    <td style="text-align: right">21.9</td>
+    <td style="text-align: right">57.9</td>
+    <td style="text-align: right">1.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Padova, Italy</td>
+    <td style="text-align: right">8.1</td>
+    <td style="text-align: right">5.5</td>
+    <td style="text-align: right">7.6</td>
+    <td style="text-align: right">18.1</td>
+    <td style="text-align: right">13.2</td>
+    <td style="text-align: right">55.0</td>
+    <td style="text-align: right">1.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Patras, Greece</td>
+    <td style="text-align: right">8.1</td>
+    <td style="text-align: right">5.1</td>
+    <td style="text-align: right">5.1</td>
+    <td style="text-align: right">19.7</td>
+    <td style="text-align: right">19.6</td>
+    <td style="text-align: right">60.9</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Brisbane, Australia</td>
+    <td style="text-align: right">8.0</td>
+    <td style="text-align: right">5.1</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">19.4</td>
+    <td style="text-align: right">18.6</td>
+    <td style="text-align: right">67.6</td>
+    <td style="text-align: right">1.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Linz, Austria</td>
+    <td style="text-align: right">7.9</td>
+    <td style="text-align: right">3.3</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">30.2</td>
+    <td style="text-align: right">21.5</td>
+    <td style="text-align: right">55.9</td>
+    <td style="text-align: right">1.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Cagliari, Italy</td>
+    <td style="text-align: right">7.9</td>
+    <td style="text-align: right">5.7</td>
+    <td style="text-align: right">5.5</td>
+    <td style="text-align: right">17.6</td>
+    <td style="text-align: right">18.1</td>
+    <td style="text-align: right">53.3</td>
+    <td style="text-align: right">1.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Boston, MA, United States</td>
+    <td style="text-align: right">7.9</td>
+    <td style="text-align: right">5.7</td>
+    <td style="text-align: right">8.4</td>
+    <td style="text-align: right">17.6</td>
+    <td style="text-align: right">11.8</td>
+    <td style="text-align: right">69.1</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Dubai, United Arab Emirates</td>
+    <td style="text-align: right">7.8</td>
+    <td style="text-align: right">7.4</td>
+    <td style="text-align: right">7.9</td>
+    <td style="text-align: right">13.5</td>
+    <td style="text-align: right">12.6</td>
+    <td style="text-align: right">59.4</td>
+    <td style="text-align: right">1.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Reykjavik, Iceland</td>
+    <td style="text-align: right">7.8</td>
+    <td style="text-align: right">6.0</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">16.7</td>
+    <td style="text-align: right">16.3</td>
+    <td style="text-align: right">83.9</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Frankfurt, Germany</td>
+    <td style="text-align: right">7.7</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">5.5</td>
+    <td style="text-align: right">26.9</td>
+    <td style="text-align: right">18.0</td>
+    <td style="text-align: right">54.5</td>
+    <td style="text-align: right">1.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bari, Italy</td>
+    <td style="text-align: right">7.7</td>
+    <td style="text-align: right">5.0</td>
+    <td style="text-align: right">6.8</td>
+    <td style="text-align: right">19.8</td>
+    <td style="text-align: right">14.7</td>
+    <td style="text-align: right">55.4</td>
+    <td style="text-align: right">1.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Surat, India</td>
+    <td style="text-align: right">7.7</td>
+    <td style="text-align: right">7.0</td>
+    <td style="text-align: right">23.0</td>
+    <td style="text-align: right">14.4</td>
+    <td style="text-align: right">4.4</td>
+    <td style="text-align: right">83.8</td>
+    <td style="text-align: right">1.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Trieste, Italy</td>
+    <td style="text-align: right">7.7</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">21.1</td>
+    <td style="text-align: right">16.3</td>
+    <td style="text-align: right">52.1</td>
+    <td style="text-align: right">1.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Delft, Netherlands</td>
+    <td style="text-align: right">7.6</td>
+    <td style="text-align: right">5.0</td>
+    <td style="text-align: right">6.4</td>
+    <td style="text-align: right">20.0</td>
+    <td style="text-align: right">15.6</td>
+    <td style="text-align: right">57.4</td>
+    <td style="text-align: right">1.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Manchester, United Kingdom</td>
+    <td style="text-align: right">7.6</td>
+    <td style="text-align: right">7.8</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">12.8</td>
+    <td style="text-align: right">17.8</td>
+    <td style="text-align: right">61.0</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Quebec City, Canada</td>
+    <td style="text-align: right">7.6</td>
+    <td style="text-align: right">3.5</td>
+    <td style="text-align: right">5.5</td>
+    <td style="text-align: right">28.9</td>
+    <td style="text-align: right">18.2</td>
+    <td style="text-align: right">57.6</td>
+    <td style="text-align: right">1.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Groningen, Netherlands</td>
+    <td style="text-align: right">7.6</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">4.6</td>
+    <td style="text-align: right">20.4</td>
+    <td style="text-align: right">21.8</td>
+    <td style="text-align: right">52.6</td>
+    <td style="text-align: right">1.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Montreal, Canada</td>
+    <td style="text-align: right">7.6</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">18.4</td>
+    <td style="text-align: right">18.4</td>
+    <td style="text-align: right">57.3</td>
+    <td style="text-align: right">1.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Melbourne, Australia</td>
+    <td style="text-align: right">7.5</td>
+    <td style="text-align: right">5.5</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">18.3</td>
+    <td style="text-align: right">21.5</td>
+    <td style="text-align: right">62.7</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Granada, Spain</td>
+    <td style="text-align: right">7.5</td>
+    <td style="text-align: right">5.1</td>
+    <td style="text-align: right">6.0</td>
+    <td style="text-align: right">19.8</td>
+    <td style="text-align: right">16.7</td>
+    <td style="text-align: right">52.2</td>
+    <td style="text-align: right">1.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Coimbra, Portugal</td>
+    <td style="text-align: right">7.5</td>
+    <td style="text-align: right">6.9</td>
+    <td style="text-align: right">10.8</td>
+    <td style="text-align: right">14.5</td>
+    <td style="text-align: right">9.3</td>
+    <td style="text-align: right">58.3</td>
+    <td style="text-align: right">1.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Astana (Nur-Sultan), Kazakhstan</td>
+    <td style="text-align: right">7.5</td>
+    <td style="text-align: right">8.9</td>
+    <td style="text-align: right">8.3</td>
+    <td style="text-align: right">11.2</td>
+    <td style="text-align: right">12.1</td>
+    <td style="text-align: right">124.3</td>
+    <td style="text-align: right">0.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Utrecht, Netherlands</td>
+    <td style="text-align: right">7.5</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">5.7</td>
+    <td style="text-align: right">18.5</td>
+    <td style="text-align: right">17.6</td>
+    <td style="text-align: right">51.5</td>
+    <td style="text-align: right">1.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Larnaca, Cyprus</td>
+    <td style="text-align: right">7.5</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">7.5</td>
+    <td style="text-align: right">18.6</td>
+    <td style="text-align: right">13.4</td>
+    <td style="text-align: right">54.9</td>
+    <td style="text-align: right">1.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Nicosia, Cyprus</td>
+    <td style="text-align: right">7.4</td>
+    <td style="text-align: right">6.2</td>
+    <td style="text-align: right">6.8</td>
+    <td style="text-align: right">16.2</td>
+    <td style="text-align: right">14.6</td>
+    <td style="text-align: right">57.7</td>
+    <td style="text-align: right">1.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Abu Dhabi, United Arab Emirates</td>
+    <td style="text-align: right">7.4</td>
+    <td style="text-align: right">9.1</td>
+    <td style="text-align: right">9.9</td>
+    <td style="text-align: right">11.0</td>
+    <td style="text-align: right">10.1</td>
+    <td style="text-align: right">57.4</td>
+    <td style="text-align: right">1.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Aarhus, Denmark</td>
+    <td style="text-align: right">7.4</td>
+    <td style="text-align: right">3.6</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">27.6</td>
+    <td style="text-align: right">24.8</td>
+    <td style="text-align: right">52.4</td>
+    <td style="text-align: right">1.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Katowice, Poland</td>
+    <td style="text-align: right">7.4</td>
+    <td style="text-align: right">4.6</td>
+    <td style="text-align: right">5.2</td>
+    <td style="text-align: right">21.7</td>
+    <td style="text-align: right">19.2</td>
+    <td style="text-align: right">70.2</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Ahmedabad, India</td>
+    <td style="text-align: right">7.4</td>
+    <td style="text-align: right">5.2</td>
+    <td style="text-align: right">5.0</td>
+    <td style="text-align: right">19.2</td>
+    <td style="text-align: right">20.2</td>
+    <td style="text-align: right">78.9</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Eindhoven, Netherlands</td>
+    <td style="text-align: right">7.3</td>
+    <td style="text-align: right">5.3</td>
+    <td style="text-align: right">5.7</td>
+    <td style="text-align: right">19.0</td>
+    <td style="text-align: right">17.7</td>
+    <td style="text-align: right">53.3</td>
+    <td style="text-align: right">1.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Nuremberg, Germany</td>
+    <td style="text-align: right">7.3</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">4.1</td>
+    <td style="text-align: right">35.1</td>
+    <td style="text-align: right">24.3</td>
+    <td style="text-align: right">52.4</td>
+    <td style="text-align: right">1.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Brescia, Italy</td>
+    <td style="text-align: right">7.3</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">7.5</td>
+    <td style="text-align: right">16.0</td>
+    <td style="text-align: right">13.3</td>
+    <td style="text-align: right">50.4</td>
+    <td style="text-align: right">2.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bremen, Germany</td>
+    <td style="text-align: right">7.3</td>
+    <td style="text-align: right">3.8</td>
+    <td style="text-align: right">3.4</td>
+    <td style="text-align: right">26.3</td>
+    <td style="text-align: right">29.8</td>
+    <td style="text-align: right">52.7</td>
+    <td style="text-align: right">1.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">San Jose, CA, United States</td>
+    <td style="text-align: right">7.3</td>
+    <td style="text-align: right">7.3</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">13.7</td>
+    <td style="text-align: right">16.5</td>
+    <td style="text-align: right">62.8</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Strasbourg, France</td>
+    <td style="text-align: right">7.3</td>
+    <td style="text-align: right">4.1</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">24.2</td>
+    <td style="text-align: right">20.4</td>
+    <td style="text-align: right">51.7</td>
+    <td style="text-align: right">1.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Tampere, Finland</td>
+    <td style="text-align: right">7.2</td>
+    <td style="text-align: right">4.5</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">22.5</td>
+    <td style="text-align: right">20.3</td>
+    <td style="text-align: right">50.2</td>
+    <td style="text-align: right">2.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Graz, Austria</td>
+    <td style="text-align: right">7.2</td>
+    <td style="text-align: right">3.0</td>
+    <td style="text-align: right">4.5</td>
+    <td style="text-align: right">33.7</td>
+    <td style="text-align: right">22.4</td>
+    <td style="text-align: right">50.8</td>
+    <td style="text-align: right">2.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Brussels, Belgium</td>
+    <td style="text-align: right">7.2</td>
+    <td style="text-align: right">5.8</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">17.4</td>
+    <td style="text-align: right">16.5</td>
+    <td style="text-align: right">51.3</td>
+    <td style="text-align: right">1.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Villach, Austria</td>
+    <td style="text-align: right">7.2</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">4.6</td>
+    <td style="text-align: right">26.7</td>
+    <td style="text-align: right">21.9</td>
+    <td style="text-align: right">49.8</td>
+    <td style="text-align: right">2.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Pune, India</td>
+    <td style="text-align: right">7.1</td>
+    <td style="text-align: right">3.0</td>
+    <td style="text-align: right">4.1</td>
+    <td style="text-align: right">33.2</td>
+    <td style="text-align: right">24.6</td>
+    <td style="text-align: right">75.6</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">San Diego, CA, United States</td>
+    <td style="text-align: right">7.1</td>
+    <td style="text-align: right">8.5</td>
+    <td style="text-align: right">8.3</td>
+    <td style="text-align: right">11.7</td>
+    <td style="text-align: right">12.1</td>
+    <td style="text-align: right">61.9</td>
+    <td style="text-align: right">1.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bergen, Norway</td>
+    <td style="text-align: right">7.0</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">4.3</td>
+    <td style="text-align: right">26.8</td>
+    <td style="text-align: right">23.2</td>
+    <td style="text-align: right">57.1</td>
+    <td style="text-align: right">1.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Fethiye, Turkey</td>
+    <td style="text-align: right">7.0</td>
+    <td style="text-align: right">6.2</td>
+    <td style="text-align: right">7.3</td>
+    <td style="text-align: right">16.2</td>
+    <td style="text-align: right">13.7</td>
+    <td style="text-align: right">273.7</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Stuttgart, Germany</td>
+    <td style="text-align: right">7.0</td>
+    <td style="text-align: right">3.3</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">30.0</td>
+    <td style="text-align: right">23.6</td>
+    <td style="text-align: right">49.7</td>
+    <td style="text-align: right">2.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Nottingham, United Kingdom</td>
+    <td style="text-align: right">6.9</td>
+    <td style="text-align: right">5.7</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">17.6</td>
+    <td style="text-align: right">24.7</td>
+    <td style="text-align: right">57.6</td>
+    <td style="text-align: right">1.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Modena, Italy</td>
+    <td style="text-align: right">6.9</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">7.0</td>
+    <td style="text-align: right">18.4</td>
+    <td style="text-align: right">14.3</td>
+    <td style="text-align: right">47.1</td>
+    <td style="text-align: right">2.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Gothenburg, Sweden</td>
+    <td style="text-align: right">6.8</td>
+    <td style="text-align: right">3.5</td>
+    <td style="text-align: right">5.2</td>
+    <td style="text-align: right">28.3</td>
+    <td style="text-align: right">19.4</td>
+    <td style="text-align: right">46.7</td>
+    <td style="text-align: right">2.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Christchurch, New Zealand</td>
+    <td style="text-align: right">6.7</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">7.8</td>
+    <td style="text-align: right">20.4</td>
+    <td style="text-align: right">12.9</td>
+    <td style="text-align: right">58.4</td>
+    <td style="text-align: right">1.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Noida, India</td>
+    <td style="text-align: right">6.7</td>
+    <td style="text-align: right">3.5</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">28.7</td>
+    <td style="text-align: right">20.8</td>
+    <td style="text-align: right">72.4</td>
+    <td style="text-align: right">1.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Muscat, Oman</td>
+    <td style="text-align: right">6.6</td>
+    <td style="text-align: right">5.3</td>
+    <td style="text-align: right">6.0</td>
+    <td style="text-align: right">18.9</td>
+    <td style="text-align: right">16.7</td>
+    <td style="text-align: right">53.8</td>
+    <td style="text-align: right">1.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Zaragoza (Saragossa), Spain</td>
+    <td style="text-align: right">6.6</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">7.2</td>
+    <td style="text-align: right">18.4</td>
+    <td style="text-align: right">13.8</td>
+    <td style="text-align: right">46.1</td>
+    <td style="text-align: right">2.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Trondheim, Norway</td>
+    <td style="text-align: right">6.6</td>
+    <td style="text-align: right">4.6</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">22.0</td>
+    <td style="text-align: right">21.4</td>
+    <td style="text-align: right">52.8</td>
+    <td style="text-align: right">1.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Leipzig, Germany</td>
+    <td style="text-align: right">6.6</td>
+    <td style="text-align: right">3.6</td>
+    <td style="text-align: right">5.8</td>
+    <td style="text-align: right">27.5</td>
+    <td style="text-align: right">17.3</td>
+    <td style="text-align: right">48.0</td>
+    <td style="text-align: right">2.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Turku, Finland</td>
+    <td style="text-align: right">6.6</td>
+    <td style="text-align: right">4.3</td>
+    <td style="text-align: right">5.0</td>
+    <td style="text-align: right">23.5</td>
+    <td style="text-align: right">19.9</td>
+    <td style="text-align: right">47.5</td>
+    <td style="text-align: right">2.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">The Hague (Den Haag), Netherlands</td>
+    <td style="text-align: right">6.5</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">17.7</td>
+    <td style="text-align: right">16.4</td>
+    <td style="text-align: right">44.9</td>
+    <td style="text-align: right">2.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Ottawa, Canada</td>
+    <td style="text-align: right">6.5</td>
+    <td style="text-align: right">6.7</td>
+    <td style="text-align: right">5.3</td>
+    <td style="text-align: right">15.0</td>
+    <td style="text-align: right">18.8</td>
+    <td style="text-align: right">48.7</td>
+    <td style="text-align: right">2.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Ankara, Turkey</td>
+    <td style="text-align: right">6.5</td>
+    <td style="text-align: right">9.1</td>
+    <td style="text-align: right">9.7</td>
+    <td style="text-align: right">11.0</td>
+    <td style="text-align: right">10.3</td>
+    <td style="text-align: right">292.7</td>
+    <td style="text-align: right">0.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Mannheim, Germany</td>
+    <td style="text-align: right">6.5</td>
+    <td style="text-align: right">3.4</td>
+    <td style="text-align: right">3.9</td>
+    <td style="text-align: right">29.6</td>
+    <td style="text-align: right">25.5</td>
+    <td style="text-align: right">45.5</td>
+    <td style="text-align: right">2.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">San Francisco, CA, United States</td>
+    <td style="text-align: right">6.5</td>
+    <td style="text-align: right">7.1</td>
+    <td style="text-align: right">6.5</td>
+    <td style="text-align: right">14.1</td>
+    <td style="text-align: right">15.3</td>
+    <td style="text-align: right">56.3</td>
+    <td style="text-align: right">1.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Vadodara, India</td>
+    <td style="text-align: right">6.4</td>
+    <td style="text-align: right">4.4</td>
+    <td style="text-align: right">4.1</td>
+    <td style="text-align: right">22.6</td>
+    <td style="text-align: right">24.4</td>
+    <td style="text-align: right">68.2</td>
+    <td style="text-align: right">1.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Lille, France</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">4.4</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">22.7</td>
+    <td style="text-align: right">20.5</td>
+    <td style="text-align: right">45.7</td>
+    <td style="text-align: right">2.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Bergamo, Italy</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">20.9</td>
+    <td style="text-align: right">20.4</td>
+    <td style="text-align: right">42.4</td>
+    <td style="text-align: right">2.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Antwerp, Belgium</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">5.8</td>
+    <td style="text-align: right">20.7</td>
+    <td style="text-align: right">17.3</td>
+    <td style="text-align: right">43.8</td>
+    <td style="text-align: right">2.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Erlangen, Germany</td>
+    <td style="text-align: right">6.2</td>
+    <td style="text-align: right">3.1</td>
+    <td style="text-align: right">3.8</td>
+    <td style="text-align: right">32.0</td>
+    <td style="text-align: right">26.2</td>
+    <td style="text-align: right">44.8</td>
+    <td style="text-align: right">2.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kitchener, Canada</td>
+    <td style="text-align: right">6.2</td>
+    <td style="text-align: right">6.9</td>
+    <td style="text-align: right">7.0</td>
+    <td style="text-align: right">14.5</td>
+    <td style="text-align: right">14.3</td>
+    <td style="text-align: right">47.8</td>
+    <td style="text-align: right">2.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Oviedo, Spain</td>
+    <td style="text-align: right">6.2</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">7.8</td>
+    <td style="text-align: right">15.9</td>
+    <td style="text-align: right">12.9</td>
+    <td style="text-align: right">41.1</td>
+    <td style="text-align: right">2.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Miami, FL, United States</td>
+    <td style="text-align: right">6.2</td>
+    <td style="text-align: right">9.4</td>
+    <td style="text-align: right">12.4</td>
+    <td style="text-align: right">10.7</td>
+    <td style="text-align: right">8.0</td>
+    <td style="text-align: right">54.7</td>
+    <td style="text-align: right">1.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Dallas, TX, United States</td>
+    <td style="text-align: right">6.2</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">9.6</td>
+    <td style="text-align: right">20.7</td>
+    <td style="text-align: right">10.4</td>
+    <td style="text-align: right">54.1</td>
+    <td style="text-align: right">1.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Perth, Australia</td>
+    <td style="text-align: right">6.2</td>
+    <td style="text-align: right">6.0</td>
+    <td style="text-align: right">6.5</td>
+    <td style="text-align: right">16.6</td>
+    <td style="text-align: right">15.4</td>
+    <td style="text-align: right">52.6</td>
+    <td style="text-align: right">1.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Riyadh, Saudi Arabia</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">7.9</td>
+    <td style="text-align: right">8.6</td>
+    <td style="text-align: right">12.6</td>
+    <td style="text-align: right">11.6</td>
+    <td style="text-align: right">50.9</td>
+    <td style="text-align: right">2.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Rotterdam, Netherlands</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">6.5</td>
+    <td style="text-align: right">7.9</td>
+    <td style="text-align: right">15.3</td>
+    <td style="text-align: right">12.7</td>
+    <td style="text-align: right">43.3</td>
+    <td style="text-align: right">2.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kiel, Germany</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">3.2</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">31.6</td>
+    <td style="text-align: right">21.1</td>
+    <td style="text-align: right">44.3</td>
+    <td style="text-align: right">2.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Dresden, Germany</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">3.5</td>
+    <td style="text-align: right">4.1</td>
+    <td style="text-align: right">28.8</td>
+    <td style="text-align: right">24.2</td>
+    <td style="text-align: right">44.4</td>
+    <td style="text-align: right">2.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">London, Canada</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">7.6</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">13.2</td>
+    <td style="text-align: right">15.8</td>
+    <td style="text-align: right">47.1</td>
+    <td style="text-align: right">2.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kelowna, Canada</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">7.3</td>
+    <td style="text-align: right">7.9</td>
+    <td style="text-align: right">13.8</td>
+    <td style="text-align: right">12.7</td>
+    <td style="text-align: right">47.0</td>
+    <td style="text-align: right">2.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Stara Zagora, Bulgaria</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">4.3</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">23.4</td>
+    <td style="text-align: right">20.4</td>
+    <td style="text-align: right">40.5</td>
+    <td style="text-align: right">2.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Gent, Belgium</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">24.0</td>
+    <td style="text-align: right">15.9</td>
+    <td style="text-align: right">41.7</td>
+    <td style="text-align: right">2.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Birmingham, United Kingdom</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">5.3</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">18.8</td>
+    <td style="text-align: right">18.5</td>
+    <td style="text-align: right">48.3</td>
+    <td style="text-align: right">2.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Boise, ID, United States</td>
+    <td style="text-align: right">6.0</td>
+    <td style="text-align: right">4.3</td>
+    <td style="text-align: right">8.3</td>
+    <td style="text-align: right">23.3</td>
+    <td style="text-align: right">12.0</td>
+    <td style="text-align: right">51.8</td>
+    <td style="text-align: right">1.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Calgary, Canada</td>
+    <td style="text-align: right">6.0</td>
+    <td style="text-align: right">7.3</td>
+    <td style="text-align: right">6.5</td>
+    <td style="text-align: right">13.8</td>
+    <td style="text-align: right">15.3</td>
+    <td style="text-align: right">45.4</td>
+    <td style="text-align: right">2.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Aachen, Germany</td>
+    <td style="text-align: right">6.0</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">24.9</td>
+    <td style="text-align: right">27.4</td>
+    <td style="text-align: right">43.1</td>
+    <td style="text-align: right">2.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Oulu, Finland</td>
+    <td style="text-align: right">5.9</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">6.8</td>
+    <td style="text-align: right">24.0</td>
+    <td style="text-align: right">14.7</td>
+    <td style="text-align: right">43.1</td>
+    <td style="text-align: right">2.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Reggio Nell'emilia, Italy</td>
+    <td style="text-align: right">5.9</td>
+    <td style="text-align: right">5.7</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">17.4</td>
+    <td style="text-align: right">18.0</td>
+    <td style="text-align: right">42.8</td>
+    <td style="text-align: right">2.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Cape Town, South Africa</td>
+    <td style="text-align: right">5.9</td>
+    <td style="text-align: right">9.4</td>
+    <td style="text-align: right">10.0</td>
+    <td style="text-align: right">10.6</td>
+    <td style="text-align: right">10.0</td>
+    <td style="text-align: right">74.2</td>
+    <td style="text-align: right">1.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Malmo, Sweden</td>
+    <td style="text-align: right">5.9</td>
+    <td style="text-align: right">5.3</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">18.7</td>
+    <td style="text-align: right">18.6</td>
+    <td style="text-align: right">39.9</td>
+    <td style="text-align: right">2.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Izmir, Turkey</td>
+    <td style="text-align: right">5.9</td>
+    <td style="text-align: right">8.8</td>
+    <td style="text-align: right">9.3</td>
+    <td style="text-align: right">11.3</td>
+    <td style="text-align: right">10.8</td>
+    <td style="text-align: right">243.0</td>
+    <td style="text-align: right">0.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Nashville, TN, United States</td>
+    <td style="text-align: right">5.8</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">11.2</td>
+    <td style="text-align: right">16.5</td>
+    <td style="text-align: right">8.9</td>
+    <td style="text-align: right">50.3</td>
+    <td style="text-align: right">2.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Belfast, United Kingdom</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">6.0</td>
+    <td style="text-align: right">7.5</td>
+    <td style="text-align: right">16.8</td>
+    <td style="text-align: right">13.4</td>
+    <td style="text-align: right">45.4</td>
+    <td style="text-align: right">2.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Genoa, Italy</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">5.2</td>
+    <td style="text-align: right">10.7</td>
+    <td style="text-align: right">19.3</td>
+    <td style="text-align: right">9.3</td>
+    <td style="text-align: right">38.9</td>
+    <td style="text-align: right">2.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Leeds, United Kingdom</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">7.4</td>
+    <td style="text-align: right">5.8</td>
+    <td style="text-align: right">13.5</td>
+    <td style="text-align: right">17.3</td>
+    <td style="text-align: right">44.4</td>
+    <td style="text-align: right">2.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Grenoble, France</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">5.0</td>
+    <td style="text-align: right">21.3</td>
+    <td style="text-align: right">20.1</td>
+    <td style="text-align: right">40.2</td>
+    <td style="text-align: right">2.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Stavanger, Norway</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">5.8</td>
+    <td style="text-align: right">5.2</td>
+    <td style="text-align: right">17.2</td>
+    <td style="text-align: right">19.4</td>
+    <td style="text-align: right">45.0</td>
+    <td style="text-align: right">2.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Saskatoon, Canada</td>
+    <td style="text-align: right">5.5</td>
+    <td style="text-align: right">7.5</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">13.2</td>
+    <td style="text-align: right">15.8</td>
+    <td style="text-align: right">42.5</td>
+    <td style="text-align: right">2.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Halifax, Canada</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">9.5</td>
+    <td style="text-align: right">9.5</td>
+    <td style="text-align: right">10.6</td>
+    <td style="text-align: right">10.5</td>
+    <td style="text-align: right">42.9</td>
+    <td style="text-align: right">2.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Las Vegas, NV, United States</td>
+    <td style="text-align: right">5.3</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">10.5</td>
+    <td style="text-align: right">15.9</td>
+    <td style="text-align: right">9.6</td>
+    <td style="text-align: right">46.6</td>
+    <td style="text-align: right">2.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Jersey City, NJ, United States</td>
+    <td style="text-align: right">5.3</td>
+    <td style="text-align: right">9.2</td>
+    <td style="text-align: right">8.1</td>
+    <td style="text-align: right">10.9</td>
+    <td style="text-align: right">12.3</td>
+    <td style="text-align: right">46.3</td>
+    <td style="text-align: right">2.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Glasgow, United Kingdom</td>
+    <td style="text-align: right">5.3</td>
+    <td style="text-align: right">7.5</td>
+    <td style="text-align: right">7.5</td>
+    <td style="text-align: right">13.4</td>
+    <td style="text-align: right">13.4</td>
+    <td style="text-align: right">41.3</td>
+    <td style="text-align: right">2.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Fort Lauderdale, FL, United States</td>
+    <td style="text-align: right">5.3</td>
+    <td style="text-align: right">10.2</td>
+    <td style="text-align: right">10.4</td>
+    <td style="text-align: right">9.8</td>
+    <td style="text-align: right">9.6</td>
+    <td style="text-align: right">45.9</td>
+    <td style="text-align: right">2.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Doha, Qatar</td>
+    <td style="text-align: right">5.2</td>
+    <td style="text-align: right">10.3</td>
+    <td style="text-align: right">11.3</td>
+    <td style="text-align: right">9.8</td>
+    <td style="text-align: right">8.8</td>
+    <td style="text-align: right">44.7</td>
+    <td style="text-align: right">2.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Denver, CO, United States</td>
+    <td style="text-align: right">5.2</td>
+    <td style="text-align: right">7.4</td>
+    <td style="text-align: right">9.2</td>
+    <td style="text-align: right">13.5</td>
+    <td style="text-align: right">10.8</td>
+    <td style="text-align: right">46.0</td>
+    <td style="text-align: right">2.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Austin, TX, United States</td>
+    <td style="text-align: right">5.1</td>
+    <td style="text-align: right">6.1</td>
+    <td style="text-align: right">9.8</td>
+    <td style="text-align: right">16.4</td>
+    <td style="text-align: right">10.2</td>
+    <td style="text-align: right">45.0</td>
+    <td style="text-align: right">2.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Manama, Bahrain</td>
+    <td style="text-align: right">5.0</td>
+    <td style="text-align: right">8.8</td>
+    <td style="text-align: right">7.7</td>
+    <td style="text-align: right">11.3</td>
+    <td style="text-align: right">13.0</td>
+    <td style="text-align: right">43.5</td>
+    <td style="text-align: right">2.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Knoxville, TN, United States</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">7.9</td>
+    <td style="text-align: right">12.1</td>
+    <td style="text-align: right">12.7</td>
+    <td style="text-align: right">8.2</td>
+    <td style="text-align: right">42.4</td>
+    <td style="text-align: right">2.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Liverpool, United Kingdom</td>
+    <td style="text-align: right">4.9</td>
+    <td style="text-align: right">6.8</td>
+    <td style="text-align: right">6.4</td>
+    <td style="text-align: right">14.7</td>
+    <td style="text-align: right">15.5</td>
+    <td style="text-align: right">38.9</td>
+    <td style="text-align: right">2.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Seattle, WA, United States</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">7.2</td>
+    <td style="text-align: right">8.4</td>
+    <td style="text-align: right">13.8</td>
+    <td style="text-align: right">11.9</td>
+    <td style="text-align: right">42.0</td>
+    <td style="text-align: right">2.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Cork, Ireland</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">8.7</td>
+    <td style="text-align: right">11.8</td>
+    <td style="text-align: right">11.5</td>
+    <td style="text-align: right">8.5</td>
+    <td style="text-align: right">35.4</td>
+    <td style="text-align: right">2.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Tarragona, Spain</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">6.6</td>
+    <td style="text-align: right">13.0</td>
+    <td style="text-align: right">15.2</td>
+    <td style="text-align: right">7.7</td>
+    <td style="text-align: right">31.6</td>
+    <td style="text-align: right">3.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Phoenix, AZ, United States</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">8.2</td>
+    <td style="text-align: right">9.3</td>
+    <td style="text-align: right">12.2</td>
+    <td style="text-align: right">10.7</td>
+    <td style="text-align: right">40.9</td>
+    <td style="text-align: right">2.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Winnipeg, Canada</td>
+    <td style="text-align: right">4.7</td>
+    <td style="text-align: right">9.0</td>
+    <td style="text-align: right">8.6</td>
+    <td style="text-align: right">11.2</td>
+    <td style="text-align: right">11.7</td>
+    <td style="text-align: right">35.7</td>
+    <td style="text-align: right">2.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Charleston, SC, United States</td>
+    <td style="text-align: right">4.6</td>
+    <td style="text-align: right">8.6</td>
+    <td style="text-align: right">11.5</td>
+    <td style="text-align: right">11.7</td>
+    <td style="text-align: right">8.7</td>
+    <td style="text-align: right">40.1</td>
+    <td style="text-align: right">2.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Sacramento, CA, United States</td>
+    <td style="text-align: right">4.6</td>
+    <td style="text-align: right">8.7</td>
+    <td style="text-align: right">9.3</td>
+    <td style="text-align: right">11.5</td>
+    <td style="text-align: right">10.8</td>
+    <td style="text-align: right">40.2</td>
+    <td style="text-align: right">2.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Moncton, Canada</td>
+    <td style="text-align: right">4.4</td>
+    <td style="text-align: right">9.5</td>
+    <td style="text-align: right">8.1</td>
+    <td style="text-align: right">10.5</td>
+    <td style="text-align: right">12.3</td>
+    <td style="text-align: right">33.8</td>
+    <td style="text-align: right">3.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Hyderabad, India</td>
+    <td style="text-align: right">4.3</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">24.1</td>
+    <td style="text-align: right">24.7</td>
+    <td style="text-align: right">45.4</td>
+    <td style="text-align: right">2.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Odense, Denmark</td>
+    <td style="text-align: right">4.3</td>
+    <td style="text-align: right">4.5</td>
+    <td style="text-align: right">6.8</td>
+    <td style="text-align: right">22.2</td>
+    <td style="text-align: right">14.8</td>
+    <td style="text-align: right">32.2</td>
+    <td style="text-align: right">3.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Washington, DC, United States</td>
+    <td style="text-align: right">4.3</td>
+    <td style="text-align: right">7.0</td>
+    <td style="text-align: right">15.0</td>
+    <td style="text-align: right">14.2</td>
+    <td style="text-align: right">6.7</td>
+    <td style="text-align: right">37.0</td>
+    <td style="text-align: right">2.7</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Salt Lake City, UT, United States</td>
+    <td style="text-align: right">4.2</td>
+    <td style="text-align: right">8.3</td>
+    <td style="text-align: right">9.4</td>
+    <td style="text-align: right">12.0</td>
+    <td style="text-align: right">10.6</td>
+    <td style="text-align: right">36.3</td>
+    <td style="text-align: right">2.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Tampa, FL, United States</td>
+    <td style="text-align: right">4.1</td>
+    <td style="text-align: right">9.4</td>
+    <td style="text-align: right">16.0</td>
+    <td style="text-align: right">10.7</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">35.7</td>
+    <td style="text-align: right">2.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Aberdeen, United Kingdom</td>
+    <td style="text-align: right">4.1</td>
+    <td style="text-align: right">8.2</td>
+    <td style="text-align: right">5.5</td>
+    <td style="text-align: right">12.2</td>
+    <td style="text-align: right">18.1</td>
+    <td style="text-align: right">32.8</td>
+    <td style="text-align: right">3.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">New Orleans, LA, United States</td>
+    <td style="text-align: right">4.1</td>
+    <td style="text-align: right">7.6</td>
+    <td style="text-align: right">18.5</td>
+    <td style="text-align: right">13.2</td>
+    <td style="text-align: right">5.4</td>
+    <td style="text-align: right">35.4</td>
+    <td style="text-align: right">2.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Reno, NV, United States</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">12.0</td>
+    <td style="text-align: right">7.9</td>
+    <td style="text-align: right">8.3</td>
+    <td style="text-align: right">12.6</td>
+    <td style="text-align: right">35.2</td>
+    <td style="text-align: right">2.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Madison, WI, United States</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">8.3</td>
+    <td style="text-align: right">12.5</td>
+    <td style="text-align: right">12.0</td>
+    <td style="text-align: right">8.0</td>
+    <td style="text-align: right">35.4</td>
+    <td style="text-align: right">2.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Ann Arbor, MI, United States</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">8.2</td>
+    <td style="text-align: right">12.2</td>
+    <td style="text-align: right">12.2</td>
+    <td style="text-align: right">8.2</td>
+    <td style="text-align: right">34.5</td>
+    <td style="text-align: right">2.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Regina, Canada</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">10.4</td>
+    <td style="text-align: right">9.0</td>
+    <td style="text-align: right">9.6</td>
+    <td style="text-align: right">11.1</td>
+    <td style="text-align: right">30.5</td>
+    <td style="text-align: right">3.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Arlington, VA, United States</td>
+    <td style="text-align: right">4.0</td>
+    <td style="text-align: right">9.7</td>
+    <td style="text-align: right">9.4</td>
+    <td style="text-align: right">10.3</td>
+    <td style="text-align: right">10.7</td>
+    <td style="text-align: right">35.1</td>
+    <td style="text-align: right">2.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Jeddah (Jiddah), Saudi Arabia</td>
+    <td style="text-align: right">3.9</td>
+    <td style="text-align: right">9.1</td>
+    <td style="text-align: right">9.3</td>
+    <td style="text-align: right">11.0</td>
+    <td style="text-align: right">10.7</td>
+    <td style="text-align: right">31.9</td>
+    <td style="text-align: right">3.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Birmingham, AL, United States</td>
+    <td style="text-align: right">3.9</td>
+    <td style="text-align: right">12.3</td>
+    <td style="text-align: right">14.0</td>
+    <td style="text-align: right">8.1</td>
+    <td style="text-align: right">7.1</td>
+    <td style="text-align: right">33.8</td>
+    <td style="text-align: right">3.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Charlotte, NC, United States</td>
+    <td style="text-align: right">3.9</td>
+    <td style="text-align: right">9.8</td>
+    <td style="text-align: right">12.5</td>
+    <td style="text-align: right">10.2</td>
+    <td style="text-align: right">8.0</td>
+    <td style="text-align: right">33.5</td>
+    <td style="text-align: right">3.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Detroit, MI, United States</td>
+    <td style="text-align: right">3.8</td>
+    <td style="text-align: right">8.6</td>
+    <td style="text-align: right">16.0</td>
+    <td style="text-align: right">11.7</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">32.6</td>
+    <td style="text-align: right">3.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">San Antonio, TX, United States</td>
+    <td style="text-align: right">3.8</td>
+    <td style="text-align: right">7.6</td>
+    <td style="text-align: right">13.0</td>
+    <td style="text-align: right">13.2</td>
+    <td style="text-align: right">7.7</td>
+    <td style="text-align: right">32.9</td>
+    <td style="text-align: right">3.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Tucson, AZ, United States</td>
+    <td style="text-align: right">3.7</td>
+    <td style="text-align: right">8.3</td>
+    <td style="text-align: right">8.6</td>
+    <td style="text-align: right">12.0</td>
+    <td style="text-align: right">11.6</td>
+    <td style="text-align: right">32.3</td>
+    <td style="text-align: right">3.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Portland, OR, United States</td>
+    <td style="text-align: right">3.6</td>
+    <td style="text-align: right">11.1</td>
+    <td style="text-align: right">10.4</td>
+    <td style="text-align: right">9.0</td>
+    <td style="text-align: right">9.7</td>
+    <td style="text-align: right">31.2</td>
+    <td style="text-align: right">3.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Columbus, OH, United States</td>
+    <td style="text-align: right">3.5</td>
+    <td style="text-align: right">9.6</td>
+    <td style="text-align: right">13.5</td>
+    <td style="text-align: right">10.4</td>
+    <td style="text-align: right">7.4</td>
+    <td style="text-align: right">30.4</td>
+    <td style="text-align: right">3.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Raleigh, NC, United States</td>
+    <td style="text-align: right">3.5</td>
+    <td style="text-align: right">9.6</td>
+    <td style="text-align: right">11.9</td>
+    <td style="text-align: right">10.4</td>
+    <td style="text-align: right">8.4</td>
+    <td style="text-align: right">30.3</td>
+    <td style="text-align: right">3.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Edmonton, Canada</td>
+    <td style="text-align: right">3.4</td>
+    <td style="text-align: right">9.5</td>
+    <td style="text-align: right">8.3</td>
+    <td style="text-align: right">10.6</td>
+    <td style="text-align: right">12.1</td>
+    <td style="text-align: right">26.0</td>
+    <td style="text-align: right">3.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Cincinnati, OH, United States</td>
+    <td style="text-align: right">3.4</td>
+    <td style="text-align: right">10.6</td>
+    <td style="text-align: right">10.9</td>
+    <td style="text-align: right">9.4</td>
+    <td style="text-align: right">9.2</td>
+    <td style="text-align: right">29.6</td>
+    <td style="text-align: right">3.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Philadelphia, PA, United States</td>
+    <td style="text-align: right">3.4</td>
+    <td style="text-align: right">11.1</td>
+    <td style="text-align: right">14.7</td>
+    <td style="text-align: right">9.0</td>
+    <td style="text-align: right">6.8</td>
+    <td style="text-align: right">29.7</td>
+    <td style="text-align: right">3.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Buffalo, NY, United States</td>
+    <td style="text-align: right">3.3</td>
+    <td style="text-align: right">10.8</td>
+    <td style="text-align: right">12.7</td>
+    <td style="text-align: right">9.3</td>
+    <td style="text-align: right">7.8</td>
+    <td style="text-align: right">28.9</td>
+    <td style="text-align: right">3.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Spokane, WA, United States</td>
+    <td style="text-align: right">3.3</td>
+    <td style="text-align: right">10.0</td>
+    <td style="text-align: right">11.8</td>
+    <td style="text-align: right">10.0</td>
+    <td style="text-align: right">8.5</td>
+    <td style="text-align: right">29.1</td>
+    <td style="text-align: right">3.4</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Fort Worth, TX, United States</td>
+    <td style="text-align: right">3.3</td>
+    <td style="text-align: right">8.5</td>
+    <td style="text-align: right">15.3</td>
+    <td style="text-align: right">11.8</td>
+    <td style="text-align: right">6.6</td>
+    <td style="text-align: right">28.7</td>
+    <td style="text-align: right">3.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Chicago, IL, United States</td>
+    <td style="text-align: right">3.2</td>
+    <td style="text-align: right">14.0</td>
+    <td style="text-align: right">13.8</td>
+    <td style="text-align: right">7.2</td>
+    <td style="text-align: right">7.2</td>
+    <td style="text-align: right">28.8</td>
+    <td style="text-align: right">3.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Minneapolis, MN, United States</td>
+    <td style="text-align: right">3.2</td>
+    <td style="text-align: right">10.9</td>
+    <td style="text-align: right">12.5</td>
+    <td style="text-align: right">9.1</td>
+    <td style="text-align: right">8.0</td>
+    <td style="text-align: right">28.1</td>
+    <td style="text-align: right">3.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Atlanta, GA, United States</td>
+    <td style="text-align: right">3.2</td>
+    <td style="text-align: right">11.0</td>
+    <td style="text-align: right">11.2</td>
+    <td style="text-align: right">9.1</td>
+    <td style="text-align: right">8.9</td>
+    <td style="text-align: right">27.8</td>
+    <td style="text-align: right">3.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Orlando, FL, United States</td>
+    <td style="text-align: right">3.1</td>
+    <td style="text-align: right">13.4</td>
+    <td style="text-align: right">12.0</td>
+    <td style="text-align: right">7.5</td>
+    <td style="text-align: right">8.3</td>
+    <td style="text-align: right">27.7</td>
+    <td style="text-align: right">3.6</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Albuquerque, NM, United States</td>
+    <td style="text-align: right">3.0</td>
+    <td style="text-align: right">10.6</td>
+    <td style="text-align: right">10.6</td>
+    <td style="text-align: right">9.4</td>
+    <td style="text-align: right">9.4</td>
+    <td style="text-align: right">25.7</td>
+    <td style="text-align: right">3.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Kansas City, MO, United States</td>
+    <td style="text-align: right">2.9</td>
+    <td style="text-align: right">12.2</td>
+    <td style="text-align: right">11.5</td>
+    <td style="text-align: right">8.2</td>
+    <td style="text-align: right">8.7</td>
+    <td style="text-align: right">25.0</td>
+    <td style="text-align: right">4.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Baltimore, MD, United States</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">13.6</td>
+    <td style="text-align: right">10.3</td>
+    <td style="text-align: right">7.4</td>
+    <td style="text-align: right">9.7</td>
+    <td style="text-align: right">24.8</td>
+    <td style="text-align: right">4.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Pittsburgh, PA, United States</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">11.0</td>
+    <td style="text-align: right">12.2</td>
+    <td style="text-align: right">9.1</td>
+    <td style="text-align: right">8.2</td>
+    <td style="text-align: right">24.4</td>
+    <td style="text-align: right">4.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Oklahoma City, OK, United States</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">11.3</td>
+    <td style="text-align: right">12.3</td>
+    <td style="text-align: right">8.8</td>
+    <td style="text-align: right">8.1</td>
+    <td style="text-align: right">24.1</td>
+    <td style="text-align: right">4.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Jacksonville, FL, United States</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">14.0</td>
+    <td style="text-align: right">11.5</td>
+    <td style="text-align: right">7.1</td>
+    <td style="text-align: right">8.7</td>
+    <td style="text-align: right">24.3</td>
+    <td style="text-align: right">4.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Durban, South Africa</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">11.1</td>
+    <td style="text-align: right">15.1</td>
+    <td style="text-align: right">9.0</td>
+    <td style="text-align: right">6.6</td>
+    <td style="text-align: right">35.7</td>
+    <td style="text-align: right">2.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Louisville, KY, United States</td>
+    <td style="text-align: right">2.8</td>
+    <td style="text-align: right">10.9</td>
+    <td style="text-align: right">12.4</td>
+    <td style="text-align: right">9.2</td>
+    <td style="text-align: right">8.0</td>
+    <td style="text-align: right">23.9</td>
+    <td style="text-align: right">4.2</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Pretoria, South Africa</td>
+    <td style="text-align: right">2.7</td>
+    <td style="text-align: right">12.2</td>
+    <td style="text-align: right">12.9</td>
+    <td style="text-align: right">8.2</td>
+    <td style="text-align: right">7.8</td>
+    <td style="text-align: right">34.3</td>
+    <td style="text-align: right">2.9</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Johannesburg, South Africa</td>
+    <td style="text-align: right">2.6</td>
+    <td style="text-align: right">11.6</td>
+    <td style="text-align: right">13.1</td>
+    <td style="text-align: right">8.6</td>
+    <td style="text-align: right">7.6</td>
+    <td style="text-align: right">32.7</td>
+    <td style="text-align: right">3.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Indianapolis, IN, United States</td>
+    <td style="text-align: right">2.6</td>
+    <td style="text-align: right">12.6</td>
+    <td style="text-align: right">14.1</td>
+    <td style="text-align: right">7.9</td>
+    <td style="text-align: right">7.1</td>
+    <td style="text-align: right">23.0</td>
+    <td style="text-align: right">4.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Syracuse, NY, United States</td>
+    <td style="text-align: right">2.6</td>
+    <td style="text-align: right">21.5</td>
+    <td style="text-align: right">16.2</td>
+    <td style="text-align: right">4.6</td>
+    <td style="text-align: right">6.2</td>
+    <td style="text-align: right">22.0</td>
+    <td style="text-align: right">4.5</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Omaha, NE, United States</td>
+    <td style="text-align: right">2.4</td>
+    <td style="text-align: right">17.9</td>
+    <td style="text-align: right">12.9</td>
+    <td style="text-align: right">5.6</td>
+    <td style="text-align: right">7.7</td>
+    <td style="text-align: right">20.8</td>
+    <td style="text-align: right">4.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Houston, TX, United States</td>
+    <td style="text-align: right">2.4</td>
+    <td style="text-align: right">14.7</td>
+    <td style="text-align: right">16.0</td>
+    <td style="text-align: right">6.8</td>
+    <td style="text-align: right">6.3</td>
+    <td style="text-align: right">20.7</td>
+    <td style="text-align: right">4.8</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Greenville, SC, United States</td>
+    <td style="text-align: right">2.3</td>
+    <td style="text-align: right">17.3</td>
+    <td style="text-align: right">13.1</td>
+    <td style="text-align: right">5.8</td>
+    <td style="text-align: right">7.6</td>
+    <td style="text-align: right">19.9</td>
+    <td style="text-align: right">5.0</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Cleveland, OH, United States</td>
+    <td style="text-align: right">2.3</td>
+    <td style="text-align: right">22.4</td>
+    <td style="text-align: right">15.4</td>
+    <td style="text-align: right">4.5</td>
+    <td style="text-align: right">6.5</td>
+    <td style="text-align: right">19.5</td>
+    <td style="text-align: right">5.1</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Wichita, KS, United States</td>
+    <td style="text-align: right">2.2</td>
+    <td style="text-align: right">13.4</td>
+    <td style="text-align: right">11.0</td>
+    <td style="text-align: right">7.4</td>
+    <td style="text-align: right">9.1</td>
+    <td style="text-align: right">18.7</td>
+    <td style="text-align: right">5.3</td>
+ </tr>
+ <tr style="width: 100%">
+  <td></td>
+    <td class="cityOrCountryInIndicesTable">Saint Louis, MO, United States</td>
+    <td style="text-align: right">2.0</td>
+    <td style="text-align: right">20.7</td>
+    <td style="text-align: right">11.2</td>
+    <td style="text-align: right">4.8</td>
+    <td style="text-align: right">8.9</td>
+    <td style="text-align: right">17.1</td>
+    <td style="text-align: right">5.8</td>
+ </tr>
+
+    </tbody>
+</table>
+    <script>
+    whenDocReady(function() {
+    var t_t2 = $('#t2').DataTable({
+  'columnDefs': [ {
+      'searchable': false,
+      'orderable': false,
+      'targets': 0
+  } ],
+        'paging': false,
+        'order': [[ 2, "desc" ]]
+,    });
+    t_t2.on( 'order.dt search.dt', function () {
+        t_t2.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+            cell.innerHTML = i+1;
+        } );
+    } ).draw();
+  });
+</script>
+
+</div>
+
+<div style="display: flex; justify-content: space-between; width: 100%;" class="flex_for_limit_ad_start_container"><div style="margin-right: 20px; " class="limit_size_ad_right flex_left_limit_size_ad_right">
+<div class="standard_margin">
+<div class="chart_bar"><script>
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(rankings_curr);
+      function rankings_curr() {
+      var data = google.visualization.arrayToDataTable([
+                ['City', 'Price to Income Ratio', { role: 'style' }],
+          ['New York, NY', 10.95, 'color: #4D89F9'],
+          ['Prague', 18.15, 'color: #4D89F9'],
+          ['Sydney', 12.52, 'color: #4D89F9'],
+          ['London', 16.71, 'color: #4D89F9'],
+          ['Berlin', 11.12, 'color: #4D89F9'],
+          ['Beijing', 29.68, 'color: #4D89F9'],
+          ['Delhi', 16.12, 'color: #4D89F9'],
+          ['Rio de Janeiro', 22.09, 'color: #4D89F9'],
+          ['Tokyo', 15.99, 'color: #4D89F9']
+        ]);
+
+        var options = {
+          title: 'Price to Income Ratio 2026 Mid-Year', 
+          backgroundColor: 'transparent',
+          legend : { textStyle: { color : '#f1FDFE'}},
+          fontName: 'Arial' ,
+          titleTextStyle: { fontSize: 15, fontName: 'Arial'} ,
+          chartArea: {left:50,top:40, right:10, bottom:50, width:'96%', height:'60%'  },
+          vAxis: { minValue:0 }
+
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('rankings_curr_div'));
+        chart.draw(data, options);
+      }
+    </script>
+<div id="rankings_curr_div" class="bar_chart_could_be_big"></div></div>
+</div>
+
+<div class="green_box relocation_links">
+<p>Other Rankings by Numbeo: 
+<ul>
+<li><a href="https://www.numbeo.com/quality-of-life/rankings.jsp">Quality of Life Index 2026 Mid-Year</a></li>
+<li><a href="https://www.numbeo.com/cost-of-living/rankings.jsp">Cost of Living Index 2026 Mid-Year</a></li>
+<li><a href="https://www.numbeo.com/crime/rankings.jsp">Crime Index 2026 Mid-Year</a></li>
+<li><a href="https://www.numbeo.com/health-care/rankings.jsp">Health Care Index 2026 Mid-Year</a></li>
+<li><a href="https://www.numbeo.com/pollution/rankings.jsp">Pollution Index 2026 Mid-Year</a></li>
+<li><a href="https://www.numbeo.com/traffic/rankings.jsp">Traffic Index 2026 Mid-Year</a></li>
+</ul>
+</div>
+<div class="green_box green_box_fit_content"><span class="section_title_container"><img src="https://www.numbeo.com/images/baseline-language.svg" alt="" title=""/><span class="section_title">This Page in Other Languages:</span></span><div class="inside_box_section_content"><table class="languages_ref_table">
+<tr><td><span class="pre_language_icon"></span>
+<img src="https://www.numbeo.com/images/flags/4x3/de.svg" style="height: 16px; padding-right: 10px; " class="icon_for_country" alt=""/><span class="other_lang">Deutsch</span><span class="align_next_to_lang_icon"><a href="https://de.numbeo.com/immobilienpreise/rankings">Immobilienpreis-Index 2026 Unter dem Jahr</a>
+</span>
+</td></tr>
+<tr><td><span class="pre_language_icon"></span>
+<img src="https://www.numbeo.com/images/flags/4x3/pt.svg" style="height: 16px; padding-right: 10px; " class="icon_for_country" alt=""/><span class="other_lang">Português</span><span class="align_next_to_lang_icon"><a href="https://pt.numbeo.com/pre%C3%A7os-de-im%C3%B3veis/classifica%C3%A7%C3%B5es">Indicador de Preços de Imóveis 2026 Meio do Ano</a>
+</span>
+</td></tr>
+<tr><td><span class="pre_language_icon"></span>
+<img src="https://www.numbeo.com/images/flags/4x3/it.svg" style="height: 16px; padding-right: 10px; " class="icon_for_country" alt=""/><span class="other_lang">Italiano</span><span class="align_next_to_lang_icon"><a href="https://it.numbeo.com/prezzi-delle-propriet%C3%A0-immobiliari/graduatoria">Indice del Prezzi degli Immobili 2026 Metà Anno</a>
+</span>
+</td></tr>
+<tr><td><span class="pre_language_icon"></span>
+<img src="https://www.numbeo.com/images/flags/4x3/fr.svg" style="height: 16px; padding-right: 10px; " class="icon_for_country" alt=""/><span class="other_lang">Français</span><span class="align_next_to_lang_icon"><a href="https://fr.numbeo.com/prix-de-l%27immobilier/classements">Indice des Prix de l'immobilier 2026 Milieu de l'année</a>
+</span>
+</td></tr>
+<tr><td><span class="pre_language_icon"></span>
+<img src="https://www.numbeo.com/images/flags/4x3/es.svg" style="height: 16px; padding-right: 10px; " class="icon_for_country" alt=""/><span class="other_lang">Español</span><span class="align_next_to_lang_icon"><a href="https://es.numbeo.com/precios-de-inmuebles/clasificaciones">Índice de Precios Inmobiliarios 2026 Mitad de año</a>
+</span>
+</td></tr>
+</table></div>
+</div>
+</div><div style="min-width: 300px; padding-top: 12px; align-self: stretch"><div style="display: flex; flex-direction: column; height: 100%; justify-content: space-between; ">
+<div style="width: 290px; height: 40px; background-color: #fff; display: inline-block;"> &nbsp;&nbsp; </div>
+</div>
+</div>
+</div>
+<!-- Column 1 end -->
+
+<br/>
+<div class="footer_content">
+<a href="https://www.numbeo.com/common/about.jsp">About</a><span class="footer_separator"></span>
+<a href="https://www.numbeo.com/common/in_the_news.jsp">Numbeo in the News</a><span class="footer_separator"></span>
+<a href="https://www.numbeo.com/common/join_community.jsp">Newsletter</a><span class="footer_separator"></span>
+<a href="https://www.numbeo.com/premium/advertise">Advertise</a><span class="footer_separator"></span>
+<a href="https://www.numbeo.com/premium/index">Premium</a><span class="footer_separator"></span>
+<a href="https://www.numbeo.com/common/api.jsp" rel="nofollow">API</a><p>
+<span style="font-style: italic">
+Copyright &copy; 2009-2026 Numbeo. Your use of this service is subject to our 
+<a href="https://www.numbeo.com/common/terms_of_use.jsp">Terms of Use</a> and 
+<a href="https://www.numbeo.com/common/privacy.jsp">Privacy Policy</a>
+</span></p>
+</div>
+</div> <!-- end of innerWidth --> 
+
+    </body>
+</html>
+
+
+
